@@ -148,7 +148,7 @@ bindsym $mod+Return exec lxterminal
 # Kill the focused window
 bindsym $mod+Shift+Escape kill
 
-# Start program launcher 
+# Start program launcher
 bindsym $mod+D exec --no-startup-id i3-dmenu-desktop # Wrapper around dmenu which only list applications shipping a .desktop file
 
 # Change focus
