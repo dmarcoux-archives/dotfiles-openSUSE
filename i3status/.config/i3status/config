@@ -1,0 +1,16 @@
+general {
+	output_format = 'i3bar'
+	colors = true
+	interval = 1
+}
+
+order += cpu_usage
+order += time
+
+cpu_usage {
+  format = 'CPU:%usage'
+}
+
+time {
+  format = '%a %d, %B %Y %T'
+}

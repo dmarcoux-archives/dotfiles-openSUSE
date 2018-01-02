@@ -99,13 +99,13 @@ assign [class="^Vlc$"] → $WS3
 exec --no-startup-id pulseaudio --start
 
 # Start volume mixer
-exec --no-startup-id pnmixer
+# exec --no-startup-id pnmixer
 
 # Start daemon for automounting optical and removable drives
-exec --no-startup-id udiskie --tray
+# exec --no-startup-id udiskie --tray
 
 # Start clipboard manager
-exec --no-startup-id xfce4-clipman
+# exec --no-startup-id xfce4-clipman
 
 # Start a terminal
 exec --no-startup-id lxterminal
@@ -120,13 +120,13 @@ exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
 exec --no-startup-id nm-applet
 
 # Start break enforcer (to prevent repetitive strain injuries)
-exec --no-startup-id workrave
+# exec --no-startup-id workrave
 
 # Start emacs server (to launch spacemacs quickly)
 exec --no-startup-id emacs --daemon
 
 # Start battery monitor (TODO: This shouldn't run on desktop computers)
-exec --no-startup-id cbatticon
+# exec --no-startup-id cbatticon
 
 #################
 # Key bindings
@@ -140,7 +140,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym $mod+Shift+R restart
 
 # Screen lock
-bindsym $mod+Shift+C exec sflock
+bindsym $mod+Shift+C exec i3lock
 
 # Start a terminal
 bindsym $mod+Return exec lxterminal
