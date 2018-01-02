@@ -102,7 +102,7 @@ exec --no-startup-id pulseaudio --start
 # exec --no-startup-id pnmixer
 
 # Start daemon for automounting optical and removable drives
-# exec --no-startup-id udiskie --tray
+exec --no-startup-id udiskie --tray
 
 # Start clipboard manager
 exec --no-startup-id parcellite
