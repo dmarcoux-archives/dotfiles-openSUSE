@@ -121,6 +121,11 @@ exec --no-startup-id nm-applet
 
 # Start break enforcer (to prevent repetitive strain injuries)
 exec --no-startup-id rsibreak
+# rsibreak always display the welcome message even though I check "Do not show this message again".
+# This is possible to fix by installing framework-integration-plugin, but I don't want to get all the KDE stuff
+# See this bug report for details: https://bugs.kde.org/show_bug.cgi?id=362082
+# For now, I prefer to simply kill the welcome message window when it appears
+for_window [title="Welcome — RSIBreak"] kill;
 
 # Start emacs server (to launch spacemacs quickly)
 exec --no-startup-id emacs --daemon
