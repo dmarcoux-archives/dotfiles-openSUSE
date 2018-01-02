@@ -105,7 +105,7 @@ exec --no-startup-id pulseaudio --start
 # exec --no-startup-id udiskie --tray
 
 # Start clipboard manager
-# exec --no-startup-id xfce4-clipman
+exec --no-startup-id parcellite
 
 # Start a terminal
 exec --no-startup-id lxterminal
