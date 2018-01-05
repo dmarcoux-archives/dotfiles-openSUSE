@@ -108,7 +108,7 @@ exec --no-startup-id udiskie --tray
 exec --no-startup-id parcellite
 
 # Start a terminal
-exec --no-startup-id lxterminal
+exec --no-startup-id termite
 
 # Start a web browser
 exec --no-startup-id $BROWSER
@@ -140,7 +140,7 @@ bindsym $mod+Shift+R restart
 bindsym $mod+Shift+C exec i3lock --show-failed-attempts
 
 # Start a terminal
-bindsym $mod+Return exec lxterminal
+bindsym $mod+Return exec termite
 
 # Kill the focused window
 bindsym $mod+Shift+Escape kill
