@@ -1,0 +1,8 @@
+[home:dmarcoux:golang-github-junegunn-fzf]
+name=home:dmarcoux:golang-github-junegunn-fzf
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/golang-github-junegunn-fzf/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0

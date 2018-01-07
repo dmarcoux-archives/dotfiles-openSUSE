@@ -1,0 +1,8 @@
+[home:dmarcoux:dbeaver]
+name=home:dmarcoux:dbeaver
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/dbeaver/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0
