@@ -5,6 +5,9 @@ if type docker > /dev/null; then
 
   # If fzf is installed, setup the following aliases
   if type fzf > /dev/null; then
+    # Select a locally available image and run a new container based on it
+    ealias drunf='docker image ls | fzf --reverse --header-lines=1 | tr --squeeze-repeats " " | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty docker run'
+
     # Tip: The following aliases are even better when fzf is using this as a default option: --bind ctrl-a:select-all,ctrl-d:deselect-all,ctrl-t:toggle-all
     #      We can quickly select one, multiple or all container(s)
 
