@@ -123,7 +123,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id emacs --daemon
 
 # Start battery monitor (TODO: This shouldn't run on desktop computers)
-# exec --no-startup-id cbatticon
+exec --no-startup-id cbatticon
 
 #################
 # Key bindings
