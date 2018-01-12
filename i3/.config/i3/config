@@ -122,8 +122,8 @@ exec --no-startup-id nm-applet
 # Start emacs server (to launch spacemacs quickly)
 exec --no-startup-id emacs --daemon
 
-# Start battery monitor (TODO: This shouldn't run on desktop computers)
-exec --no-startup-id cbatticon
+# Start battery monitor if needed
+exec --no-startup-id ~/dotfiles/scripts/monitor_battery.sh
 
 #################
 # Key bindings
