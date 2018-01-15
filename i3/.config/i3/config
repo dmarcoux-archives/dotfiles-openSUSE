@@ -95,12 +95,12 @@ bar {
     }
 }
 
-exec ~/dotfiles/scripts/set_keyboard_layout.sh
+exec --no-startup-id ~/dotfiles/scripts/set_keyboard_layout.sh
 
-exec_always ~/dotfiles/scripts/set_xrandr_dpi.sh
+exec_always --no-startup-id ~/dotfiles/scripts/set_xrandr_dpi.sh
 
 # Set monitors' configuration
-exec_always ~/dotfiles/scripts/set_xrandr_both.sh
+exec_always --no-startup-id ~/dotfiles/scripts/set_xrandr_both.sh
 
 #################
 # Applications
@@ -126,10 +126,10 @@ exec --no-startup-id udiskie --tray
 exec --no-startup-id parcellite
 
 # Start a terminal
-exec --no-startup-id termite
+exec termite
 
 # Start a web browser
-exec --no-startup-id $BROWSER
+exec $BROWSER
 
 # Start time+location-based color temperature adjuster for monitors
 exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
@@ -151,8 +151,8 @@ exec --no-startup-id unclutter
 #################
 
 # Brightness adjustment function keys
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Restart i3 (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+R restart
@@ -163,7 +163,7 @@ bindsym $mod+Shift+R restart
 set $system_mode System: (l) Lock, (Shift+q) Logout, (Shift+s) Shutdown, (Shift+r) Reboot, (Escape) Go back to default mode
 mode "$system_mode" {
     # Lock the system
-    bindsym l exec i3lock \
+    bindsym l exec --no-startup-id i3lock \
                      --ignore-empty-password \
                      --blur=5 \
                      --indicator \
@@ -187,13 +187,13 @@ mode "$system_mode" {
                      , mode "default"
 
     # Logout of the current session
-    bindsym Shift+q exec i3-msg exit
+    bindsym Shift+q exec --no-startup-id i3-msg exit
 
     # Reboot the system
-    bindsym Shift+r exec systemctl reboot
+    bindsym Shift+r exec --no-startup-id systemctl reboot
 
     # Shutdown the system
-    bindsym Shift+s exec systemctl poweroff
+    bindsym Shift+s exec --no-startup-id systemctl poweroff
 
     # Exit the system mode with Escape
     bindsym Escape mode "default"
@@ -207,7 +207,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Escape kill
 
 # Start program launcher
-bindsym $mod+D exec --no-startup-id i3-dmenu-desktop # Wrapper around dmenu which only list applications shipping a .desktop file
+bindsym $mod+D exec i3-dmenu-desktop # Wrapper around dmenu which only list applications shipping a .desktop file
 
 # Change focus
 bindsym $mod+H focus left
