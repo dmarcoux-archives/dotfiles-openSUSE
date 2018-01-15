@@ -110,6 +110,9 @@ exec_always ~/dotfiles/scripts/set_xrandr_both.sh
 assign [class="^Firefox"] → $WS2
 assign [class="^Vlc$"] → $WS3
 
+# Kill potentially hung up audio server (it happens when a user logs out and back in)
+exec --no-startup-id killall pulseaudio
+
 # Start audio server
 exec --no-startup-id pulseaudio --start
 
