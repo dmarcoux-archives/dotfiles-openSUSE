@@ -163,7 +163,7 @@ bindsym $mod+Shift+R restart
 set $system_mode System: (l) Lock, (Shift+q) Logout, (Shift+s) Shutdown, (Shift+r) Reboot, (Escape) Go back to default mode
 mode "$system_mode" {
     # Lock the system
-    bindsym l exec --no-startup-id i3lock \
+    bindsym l exec --no-startup-id "i3lock \
                      --ignore-empty-password \
                      --blur=5 \
                      --indicator \
@@ -181,9 +181,10 @@ mode "$system_mode" {
                      --textcolor=$dark_beige_a \
                      --timecolor=$black_a \
                      --datecolor=$black_a \
-                     --veriftext="" \
-                     --wrongtext="" \
-                     --radius=180 \
+                     --datestr='%a %d, %B %Y' \
+                     --veriftext='' \
+                     --wrongtext='' \
+                     --radius=180" \
                      , mode "default"
 
     # Logout of the current session
