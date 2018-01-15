@@ -136,3 +136,4 @@ text/x-vcard=emacs.desktop;
 text/xml-external-parsed-entity=emacs.desktop;
 text/xml=emacs.desktop;
 application/pdf=mupdf.desktop;
+application/javascript=emacs.desktop;
