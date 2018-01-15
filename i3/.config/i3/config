@@ -140,6 +140,9 @@ exec --no-startup-id emacs --daemon
 # Start battery monitor if needed
 exec --no-startup-id ~/dotfiles/scripts/monitor_battery.sh
 
+# Start idle mouse cursor hider
+exec --no-startup-id unclutter
+
 #################
 # Key bindings
 #################
