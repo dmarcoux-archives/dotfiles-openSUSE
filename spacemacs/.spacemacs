@@ -12,7 +12,9 @@
    dotspacemacs-configuration-layers
    '(
      (go :variables go-tab-width 4)
-     javascript
+     (javascript :variables
+                 js-indent-level 2
+                 js2-basic-offset 2)
      html
      sql
      yaml
@@ -228,9 +230,8 @@ values."
    dotspacemacs-persistent-server nil
    dotspacemacs-search-tools '("ag" "grep")
    dotspacemacs-default-package-repository nil
-   dotspacemacs-whitespace-cleanup 'trailing
-   js2-basic-offset 2
-   js-indent-level 2
+   ;; Cleanup whitespace on changed lines only
+   dotspacemacs-whitespace-cleanup 'changed
    ))
 
 (defun dotspacemacs/user-init ()
@@ -243,7 +244,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
   )
 
 (defun dotspacemacs/user-config ()
-  (setq x-select-enable-clipboard-manager nil) ; When exiting, prevent transferring data to the clipboard manager
+  ; When exiting, prevent transferring data to the clipboard manager
+  (setq x-select-enable-clipboard-manager nil)
+
   (setq show-trailing-whitespace t)
 
   ; Keybindings - Normal mode
