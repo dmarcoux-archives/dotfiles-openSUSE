@@ -1,0 +1,8 @@
+[home:dmarcoux:pass-otp]
+name=home:dmarcoux:pass-otp
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/pass-otp/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0
