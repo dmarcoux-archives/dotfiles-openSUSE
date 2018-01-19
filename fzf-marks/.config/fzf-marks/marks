@@ -8,3 +8,5 @@ ruby : ~/projets/ruby
 config : ~/.config
 pass : ~/.config/pass
 dotfiles : ~/dotfiles
+obs : ~/projets/obs
+music : ~/Music
