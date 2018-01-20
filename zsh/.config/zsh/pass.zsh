@@ -11,4 +11,10 @@ if type pass > /dev/null; then
     # Retrieve the OTP code for the selected login and copy it to the clipboard
     find $PASSWORD_STORE_DIR/otp -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\(.*\)\.gpg|\1|g" | fzf --no-multi --reverse | xargs --no-run-if-empty pass otp --clip
   }
+
+  # Setup new two-factor authentication code from a QR code image
+  # Usage: n2fa qr_code.jpg work/github=whatever@email.com
+  n2fa(){
+    zbarimg -q --raw $1 | pass otp insert otp/$2
+  }
 fi
