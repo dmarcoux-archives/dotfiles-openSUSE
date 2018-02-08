@@ -35,3 +35,38 @@ ealias gsh='git show'
 alias gshf='glo | fzf --ansi --no-sort | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git show'
 ealias gst='git status'
 ealias gsta='git stash'
+
+# Add a Git repository (source) with its complete history to another one (destination). It doesn't overwrite the destination, the source's history is simply added
+# - "source" and "destination" have to be the URL to a repo. Example: git@github.com:dmarcoux/dotfiles.git
+add_repo() {
+  if [ -z "$1" ] || [ -z "$2" ]; then
+    # Display usage
+    echo "Usage: add_repo git@github.com:example/source_repo.git git@github.com:example/destination_repo.git"
+    return
+  fi
+
+  SOURCE="$1"
+  DESTINATION="$2"
+
+  # Setup temporary directories
+  mkdir ~/tmp
+  rm -rf ~/tmp/source ~/tmp/destination
+
+  # Clone source and destination Git repositories
+  git clone $SOURCE ~/tmp/source
+  git clone $DESTINATION ~/tmp/destination
+
+  # Add source remote in destination
+  cd ~/tmp/destination
+  git remote add source $SOURCE
+
+  # Pull source's master in destination's master
+  git pull source master --allow-unrelated-histories
+
+  # Remove source remote from destination
+  git remote rm source
+
+  # Manual steps to be sure everything is fine
+  # git log
+  # git push
+}
