@@ -1,0 +1,8 @@
+[home:dmarcoux:rofi-dmenu]
+name=home:dmarcoux:rofi-dmenu
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/rofi-dmenu/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0
