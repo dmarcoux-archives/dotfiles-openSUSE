@@ -1,5 +1,5 @@
-[home:dany:termite]
-name=home:dany:termite
+[home:dmarcoux:termite]
+name=home:dmarcoux:termite
 enabled=1
 autorefresh=1
 baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/termite/openSUSE_Tumbleweed/
