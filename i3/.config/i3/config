@@ -231,8 +231,7 @@ bindsym $mod+Control+L move workspace to output right
 # Enter fullscreen mode for the focused container
 bindsym $mod+F fullscreen toggle
 
-# Change container layout (stacked, tabbed, toggle split)
-bindsym $mod+S layout stacking
+# Change container layout (tabbed, toggle split)
 bindsym $mod+W layout tabbed
 bindsym $mod+E layout toggle split
 
