@@ -1,0 +1,3 @@
+rofi.modi: window,drun
+rofi.font: DejaVu Sans Mono 13
+rofi.show-icons: true
