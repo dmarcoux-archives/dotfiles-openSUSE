@@ -208,7 +208,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Escape kill
 
 # Start program launcher
-bindsym $mod+D exec i3-dmenu-desktop # Wrapper around dmenu (symlink to rofi) which only list applications shipping a .desktop file
+bindsym $mod+D exec rofi -show drun # Only list applications shipping a .desktop file
 
 # Start window switcher
 bindsym $mod+S exec rofi -show window
