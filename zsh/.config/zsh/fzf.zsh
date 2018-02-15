@@ -31,8 +31,8 @@ if type fzf > /dev/null; then
   # Keybinds to select, deselect and toggle all results
   local BIND_SELECT="--bind ctrl-a:select-all,ctrl-d:deselect-all,ctrl-t:toggle-all"
 
-  # Default layout
-  local LAYOUT="--height=20% --reverse"
+  # Default layout (fullscreen and input from top)
+  local LAYOUT="--min-height=100 --reverse"
 
   # Default options
   export FZF_DEFAULT_OPTS="$BIND_SELECT $LAYOUT $FZF_DEFAULT_COLORS"
