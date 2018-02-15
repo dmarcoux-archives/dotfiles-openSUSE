@@ -1,6 +1,6 @@
 HISTFILE=~/.zhistory
-HISTSIZE=3000
-SAVEHIST=3000
+HISTSIZE=10000
+SAVEHIST=10000
 
 # Share history among all shells
 setopt SHARE_HISTORY
