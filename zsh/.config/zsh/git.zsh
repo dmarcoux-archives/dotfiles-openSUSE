@@ -32,7 +32,7 @@ ealias grev='git revert'
 alias grevf='glo | fzf --ansi --no-sort | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git revert'
 ealias gsh='git show'
 # Select a commit with fzf and show it
-alias gshf='glo | fzf --ansi --no-sort | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git show'
+alias gshf='glo | fzf --ansi --no-sort --preview "echo {} | cut --delimiter=\" \" --fields=1 | xargs git show" | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git show'
 ealias gst='git status'
 ealias gsta='git stash'
 
