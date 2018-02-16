@@ -1,3 +1,25 @@
+! window: Window switcher
+! drun: Launch application (from list of .desktop files)
 rofi.modi: window,drun
+
+! Same font as in i3
 rofi.font: DejaVu Sans Mono 13
+
 rofi.show-icons: true
+
+rofi.matching: fuzzy
+
+! Unbind this as it is normally Control+k, which I need for vim keybindings
+rofi.kb-remove-to-eol:
+
+! Select entry
+rofi.kb-accept-entry: Return
+
+! Go to previous entry
+rofi.kb-row-up: Control+k
+
+! Go to next entry
+rofi.kb-row-down: Control+j
+
+! Quit rofi
+rofi.kb-cancel: Escape
