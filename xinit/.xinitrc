@@ -31,6 +31,14 @@ esac
 
 # Set environment variables (so they are available in i3)
 
+# If go is installed
+if type go > /dev/null; then
+  # Setup Go environment
+  export GOPATH=~/projets/go
+  export GOROOT=/usr/lib/go
+  export PATH=$PATH:$GOPATH/bin
+fi
+
 # If pass is installed
 if type pass > /dev/null; then
   # Do not pollute the home directory
