@@ -1,6 +1,8 @@
 ! window: Window switcher
 ! drun: Launch application (from list of .desktop files)
-rofi.modi: window,drun
+! pass: Frontend to pass
+! pass-otp: Frontend to pass-otp
+rofi.modi: window,drun,pass:rofi-pass.sh,pass-otp:rofi-pass-otp.sh
 
 ! Same font as in i3
 rofi.font: DejaVu Sans Mono 13

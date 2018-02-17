@@ -29,6 +29,17 @@ esac
 # Load .Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
+# Set environment variables (so they are available in i3)
+
+# If pass is installed
+if type pass > /dev/null; then
+  # Do not pollute the home directory
+  export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass/passwords
+fi
+
+# Add dotfiles' scripts to the PATH
+export PATH=$PATH:~/dotfiles/scripts
+
 #----- End of custom lines ---
 
 # Finally start the window manager
