@@ -40,6 +40,9 @@ export LESS_TERMCAP_so=$'\E[38;33;246m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 
+# Set GPG TTY - source: https://wiki.archlinux.org/index.php/GnuPG#Configure_pinentry_to_use_the_correct_TTY
+export GPG_TTY=$(tty)
+
 # If go is installed
 if type go > /dev/null; then
   # Setup Go environment

@@ -1,6 +1,3 @@
-# Set GPG TTY
-export GPG_TTY=$(tty)
-
 # Start gpg-agent if it is not already running
 # From https://wiki.archlinux.org/index.php/GnuPG#SSH_agent
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
