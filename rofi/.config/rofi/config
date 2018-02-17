@@ -7,6 +7,10 @@ rofi.font: DejaVu Sans Mono 13
 
 rofi.show-icons: true
 
+! Sort entries by matches
+rofi.sort: true
+
+! Use fuzzy matching algorithm
 rofi.matching: fuzzy
 
 ! Unbind this as it is normally Control+k, which I need for vim keybindings
