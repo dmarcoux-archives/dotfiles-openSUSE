@@ -43,6 +43,9 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 # Set GPG TTY - source: https://wiki.archlinux.org/index.php/GnuPG#Configure_pinentry_to_use_the_correct_TTY
 export GPG_TTY=$(tty)
 
+# Add dotfiles' scripts to the PATH
+export PATH=$PATH:~/dotfiles/scripts
+
 # If go is installed
 if type go > /dev/null; then
   # Setup Go environment
@@ -56,9 +59,6 @@ if type pass > /dev/null; then
   # Do not pollute the home directory
   export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass/passwords
 fi
-
-# Add dotfiles' scripts to the PATH
-export PATH=$PATH:~/dotfiles/scripts
 
 # If stack is installed
 if type stack > /dev/null; then
