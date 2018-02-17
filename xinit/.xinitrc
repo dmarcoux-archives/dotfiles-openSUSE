@@ -48,6 +48,12 @@ fi
 # Add dotfiles' scripts to the PATH
 export PATH=$PATH:~/dotfiles/scripts
 
+# If stack is installed
+if type stack > /dev/null; then
+  # Recommendation from https://docs.haskellstack.org/en/stable/GUIDE/#downloading-and-installation
+  export PATH=$PATH:~/.local/bin
+fi
+
 #----- End of custom lines ---
 
 # Finally start the window manager
