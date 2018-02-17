@@ -74,6 +74,50 @@ export GPG_TTY=$(tty)
 # Add dotfiles' scripts to the PATH
 export PATH=$PATH:~/dotfiles/scripts
 
+# If fzf is installed
+if type fzf > /dev/null; then
+  # Default command to use when input is tty
+  export FZF_DEFAULT_COMMAND='\ag --hidden -g ""'
+
+  # Default command for the CTRL+T key binding
+  export FZF_CTRL_T_COMMAND='\ag --hidden -g ""'
+
+  # Default colors, Solarized (Light)
+  _fzf_default_colors() {
+    local black='#002B36'
+    local grey='#839496'
+    local dark_beige='#EEE8D5'
+    local light_beige='#FDF6E3'
+    local yellow='#B58900'
+    local orange='#CB4B16'
+    local red='#DC322F'
+    local magenta='#D33682'
+    local violet='#6C71C4'
+    local blue='#268BD2'
+    local cyan='#2AA198'
+    local green='#859900'
+
+    export FZF_DEFAULT_COLORS="
+      --color fg:$grey,bg:$light_beige,hl:$blue,fg+:$light_beige,bg+:$green,hl+:$blue
+      --color info:$yellow,prompt:$yellow,pointer:$light_beige,marker:$light_beige,spinner:$yellow
+    "
+  }
+  _fzf_default_colors
+
+  # Keybinds to select, deselect and toggle all results
+  export FZF_BIND_SELECT="--bind ctrl-a:select-all,ctrl-d:deselect-all,ctrl-t:toggle-all"
+
+  # Default layout (fullscreen and input from top)
+  export FZF_LAYOUT="--min-height=100 --reverse"
+
+  # Default options
+  export FZF_DEFAULT_OPTS="$FZF_BIND_SELECT $FZF_LAYOUT $FZF_DEFAULT_COLORS"
+
+  # For fzf-marks
+  export MARKS_DIR="${XDG_CONFIG_HOME}/fzf-marks"
+  export MARKS_FILE="${MARKS_DIR}/marks"
+fi
+
 # If go is installed
 if type go > /dev/null; then
   # Setup Go environment
