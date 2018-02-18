@@ -1,0 +1,4 @@
+$if Bash
+  # Space performs history expansion
+  Space: magic-space
+$endif
