@@ -12,6 +12,16 @@ up() {
   done
 }
 
+upc() {
+  if [ -z "$*" ]; then
+    # Display usage if no parameters given
+    echo "Usage: upc <directory_name> OR upc <number of directories up> <directory_name>"
+    return
+  fi
+
+  # TODO: Complete!!!
+}
+
 # Extract archives
 extract() {
   if [ -z "$1" ]; then
