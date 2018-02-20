@@ -4,7 +4,7 @@ if type pass > /dev/null; then
   nppp(){
     if [ -z "$1" ]; then
       # Display usage if no parameters given
-      echo 'Usage: nppp me/some_website=account (account is the email/username in the login)'
+      echo 'Usage: nppp me/some_website.com=account (account is the email/username in the login)'
       return
     fi
 
@@ -14,7 +14,7 @@ if type pass > /dev/null; then
   # Setup new two-factor authentication code from a QR code image
   n2fa(){
     if [ -z "$@" ]; then
-      echo 'Usage: n2fa qr_code.jpg work/some_website=account (account is the email/username in the login)'
+      echo 'Usage: n2fa qr_code.jpg work/some_website.com=account (account is the email/username in the login)'
       return
     fi
 
