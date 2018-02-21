@@ -65,6 +65,9 @@ client.urgent            $red   $red       $light_beige
 # Window focus doesn't follow mouse movements
 focus_follows_mouse no
 
+# Focus stays in the same parent container
+force_focus_wrapping yes
+
 # New containers on workspace starts in tabbed mode
 workspace_layout tabbed
 
