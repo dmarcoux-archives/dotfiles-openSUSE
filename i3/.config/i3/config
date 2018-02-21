@@ -155,7 +155,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Restart i3 (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+R restart
+bindsym $mod+Shift+r restart
 
 # To be able to shutdown and reboot, do the following:
 # 1. sudo visudo -f /etc/sudoers.d/shutdown
@@ -208,10 +208,10 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Escape kill
 
 # Start program launcher
-bindsym $mod+D exec rofi -show drun # Only list applications shipping a .desktop file
+bindsym $mod+d exec rofi -show drun # Only list applications shipping a .desktop file
 
 # Start window switcher
-bindsym $mod+S exec rofi -show window
+bindsym $mod+s exec rofi -show window
 
 # Start rofi frontend to pass-otp for my two-factor authentication (2FA) codes
 bindsym $mod+o exec rofi -show pass-otp
@@ -220,35 +220,35 @@ bindsym $mod+o exec rofi -show pass-otp
 bindsym $mod+p exec rofi -show pass
 
 # Change focus
-bindsym $mod+H focus left
-bindsym $mod+J focus down
-bindsym $mod+K focus up
-bindsym $mod+L focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # Move the focused window
-bindsym $mod+Shift+H move left
-bindsym $mod+Shift+J move down
-bindsym $mod+Shift+K move up
-bindsym $mod+Shift+L move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # Move the focused workspace between monitors
-bindsym $mod+Control+H move workspace to output left
-bindsym $mod+Control+J move workspace to output down
-bindsym $mod+Control+K move workspace to output up
-bindsym $mod+Control+L move workspace to output right
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
 
 # Enter fullscreen mode for the focused container
-bindsym $mod+F fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # Change container layout (tabbed, toggle split)
-bindsym $mod+W layout tabbed
-bindsym $mod+E layout toggle split
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # Focus the parent container
-bindsym $mod+Shift+A focus parent
+bindsym $mod+Shift+a focus parent
 
 # Focus the child container
-bindsym $mod+A focus child
+bindsym $mod+a focus child
 
 # Switch to workspace
 bindsym $mod+1 workspace $WS1
