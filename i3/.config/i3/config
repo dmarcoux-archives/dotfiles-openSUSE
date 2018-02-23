@@ -126,7 +126,7 @@ exec --no-startup-id pnmixer
 exec --no-startup-id udiskie --tray
 
 # Start clipboard manager
-exec --no-startup-id parcellite
+exec --no-startup-id clipmenud
 
 # Start a terminal
 exec termite
@@ -221,6 +221,9 @@ bindsym $mod+o exec rofi -show pass-otp
 
 # Start rofi frontend to pass for my passwords
 bindsym $mod+p exec rofi -show pass
+
+# Start rofi frontend to clipboard manager
+bindsym $mod+c exec clipmenu -p 'clipboard'
 
 # Change focus
 bindsym $mod+h focus left
