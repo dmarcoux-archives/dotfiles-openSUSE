@@ -1,0 +1,8 @@
+[home:dmarcoux:clipmenu]
+name=home:dmarcoux:clipmenu
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/clipmenu/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0
