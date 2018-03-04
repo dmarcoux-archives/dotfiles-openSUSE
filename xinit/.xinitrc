@@ -138,6 +138,9 @@ if type stack > /dev/null; then
   export PATH=$PATH:~/.local/bin
 fi
 
+# Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+
 #----- End of custom lines ---
 
 # Finally start the window manager
