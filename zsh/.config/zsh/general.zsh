@@ -20,6 +20,11 @@ upc() {
   fi
 
   # TODO: Complete!!!
+  # upc X my_dir
+  # Goes X directories up, then cd into directory (if found, otherwise list directories with fzf to select one)
+
+  # upc my_dir
+  # Goes one directory up, then cd into directory (if found, otherwise list directories with fzf to select on
 }
 
 # Extract archives
