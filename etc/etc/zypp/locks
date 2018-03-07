@@ -1,0 +1,12 @@
+
+type: pattern
+match_type: exact
+case_sensitive: on
+solvable_name: games
+
+
+type: package
+match_type: exact
+case_sensitive: on
+solvable_name: highlight
+
