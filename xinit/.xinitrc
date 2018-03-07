@@ -84,17 +84,18 @@ if type fzf > /dev/null; then
 
   # Default colors, Solarized (Light)
   _fzf_default_colors() {
-    local black='#002B36'
+    # Commented colors are not used, but kept if I ever want to change this one day
+    # local black='#002B36'
     local grey='#839496'
-    local dark_beige='#EEE8D5'
+    # local dark_beige='#EEE8D5'
     local light_beige='#FDF6E3'
     local yellow='#B58900'
-    local orange='#CB4B16'
-    local red='#DC322F'
-    local magenta='#D33682'
-    local violet='#6C71C4'
+    # local orange='#CB4B16'
+    # local red='#DC322F'
+    # local magenta='#D33682'
+    # local violet='#6C71C4'
     local blue='#268BD2'
-    local cyan='#2AA198'
+    # local cyan='#2AA198'
     local green='#859900'
 
     export FZF_DEFAULT_COLORS="
