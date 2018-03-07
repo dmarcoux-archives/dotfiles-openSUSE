@@ -1,0 +1,30 @@
+## Type:    string
+## Default:
+## Path: Desktop
+## Description: default mouse cursor theme
+#
+# Name of mouse cursor theme for X11. Possible themes can be found
+# in /usr/share/icons/
+#
+X_MOUSE_CURSOR="DMZ"
+## Path:	Desktop/Window manager
+## Description:	
+## Type:	string(default,gnome,plasma5,lxde,xfce,twm,icewm,enlightenment)
+## Default:	default
+## Config:      profiles,kde,susewm
+#
+# Here you can set the default window manager (kde, fvwm, ...)
+# changes here require at least a re-login.
+#
+# This value is deprecated and not read by most display managers.
+# Use 'update-alternatives --config default-xsession.desktop' for configuration instead.
+
+DEFAULT_WM="i3"
+
+## Type:	yesno
+## Default:	yes
+#
+# install the SUSE extension for new users
+# (theme and additional functions)
+#
+INSTALL_DESKTOP_EXTENSIONS="yes"
