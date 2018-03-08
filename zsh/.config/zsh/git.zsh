@@ -4,8 +4,6 @@ ealias gbra='git branch'
 ealias gchp='git cherry-pick'
 ealias gcko='git checkout'
 ealias gckob='git checkout -b'
-# Select a remote branch with fzf and if needed, create a local copy of it, then switch to it
-ealias gckobf="git branch --remotes | sed 's|origin/||g;1d' | sort | fzf | xargs --no-run-if-empty -I % sh -c 'git checkout -b % || git checkout %;'"
 # Select a branch with fzf and switch to it
 alias gckof='git branch | fzf | cut --characters=3- | xargs --no-run-if-empty git checkout'
 ealias gclo='git clone'
