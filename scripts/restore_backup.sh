@@ -5,3 +5,28 @@
 # -u: Exit on unset variables
 # -x: Write to standard error a trace for each command after it expands the command and before it executes it
 set -eux
+
+# Setup spacemacs
+# - Remove emacs files
+# - Install spacemacs
+# - Install spacemacs' layers (only needed the first time)
+rm -rf ~/.emacs.d
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+emacs
+
+# Install vim's plugin
+vim +PlugInstall +qall
+
+# Set login shell
+chsh -s "$(which zsh)"
+
+# Add user to docker group
+sudo gpasswd --add "$(whoami)" docker
+
+# Enable docker service
+systemctl enable --now docker
+
+# Add SSH key to gpg-agent
+ssh-add ~/.ssh/id_rsa
+
+echo "Logout or restart computer to refresh the user's groups"
