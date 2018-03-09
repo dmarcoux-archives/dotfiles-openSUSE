@@ -44,9 +44,13 @@ call plug#end()
 
 "---------- vim-colors-solarized
 
-" Set solarized light colorscheme
+" Use light version of colorscheme
 set background=light
-colorscheme solarized
+
+" Set solarized colorscheme if it's installed
+if globpath(&runtimepath, 'plugged/vim-colors-solarized/colors/solarized.vim', 1) !=# ''
+  colorscheme solarized
+endif
 
 "-------------------- Mappings
 
