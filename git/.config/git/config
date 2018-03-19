@@ -1,3 +1,5 @@
+[branch]
+  autoSetupRebase = always
 [commit]
   gpgSign = true
 [core]
