@@ -72,7 +72,8 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 export GPG_TTY=$(tty)
 
 # Add dotfiles' scripts to the PATH
-export PATH=$PATH:~/dotfiles/scripts
+# Add binaries installed for user to the PATH (pip, stack, etc...)
+export PATH=$PATH:~/dotfiles/scripts:~/.local/bin
 
 # If fzf is installed
 if type fzf > /dev/null; then
@@ -131,12 +132,6 @@ fi
 if type pass > /dev/null; then
   # Do not pollute the home directory
   export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass/passwords
-fi
-
-# If stack is installed
-if type stack > /dev/null; then
-  # Recommendation from https://docs.haskellstack.org/en/stable/GUIDE/#downloading-and-installation
-  export PATH=$PATH:~/.local/bin
 fi
 
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
