@@ -37,20 +37,6 @@ set $violet        #6C71C4
 set $blue          #268BD2
 set $cyan          #2AA198
 set $green         #859900
-# With alpha, fully opaque (for i3lock-color)
-set $black_a       #002B36FF
-set $grey_a        #839496FF
-set $dark_beige_a  #EEE8D5FF
-set $light_beige_a #FDF6E3FF
-set $yellow_a      #B58900FF
-set $orange_a      #CB4B16FF
-set $red_a         #DC322FFF
-set $magenta_a     #D33682FF
-set $violet_a      #6C71C4FF
-set $blue_a        #268BD2FF
-set $cyan_a        #2AA198FF
-set $green_a       #859900FF
-
 
 # TYPE                   BORDER BACKGROUND TEXT
 client.focused           $green $green     $light_beige
@@ -169,29 +155,7 @@ bindsym $mod+Shift+r restart
 set $system_mode System: (l) Lock, (Shift+q) Logout, (Shift+s) Shutdown, (Shift+r) Reboot, (Escape) Go back to default mode
 mode "$system_mode" {
     # Lock the system
-    bindsym l exec --no-startup-id "i3lock \
-                     --ignore-empty-password \
-                     --blur=5 \
-                     --indicator \
-                     --force-clock \
-                     --insidevercolor=$dark_beige_a \
-                     --insidewrongcolor=$red_a \
-                     --insidecolor=$dark_beige_a \
-                     --ringvercolor=$green_a \
-                     --ringwrongcolor=$red_a \
-                     --ringcolor=$grey_a \
-                     --line-uses-inside \
-                     --keyhlcolor=$green_a \
-                     --bshlcolor=$red_a \
-                     --separatorcolor=$dark_beige_a \
-                     --textcolor=$dark_beige_a \
-                     --timecolor=$black_a \
-                     --datecolor=$black_a \
-                     --datestr='%a %d, %B %Y' \
-                     --veriftext='' \
-                     --wrongtext='' \
-                     --radius=180" \
-                     , mode "default"
+    bindsym l exec --no-startup-id "i3lock --color=$light_beige", mode "default"
 
     # Logout of the current session
     bindsym Shift+q exec --no-startup-id i3-msg exit
