@@ -4,5 +4,5 @@ enabled=1
 autorefresh=1
 baseurl=http://download.opensuse.org/tumbleweed/repo/non-oss/
 path=/
-type=yast2
+type=rpm-md
 keeppackages=0
