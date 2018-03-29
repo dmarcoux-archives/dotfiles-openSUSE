@@ -1,8 +1,0 @@
-[home:dmarcoux:i3lock-color]
-name=home:dmarcoux:i3lock-color
-enabled=1
-autorefresh=1
-baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/i3lock-color/openSUSE_Tumbleweed/
-path=/
-type=rpm-md
-keeppackages=0
