@@ -1,5 +1,5 @@
 # If pass is installed, set it up
-if type pass > /dev/null; then
+if type pass > /dev/null 2>&1; then
   # Setup new password
   nppp(){
     if [ -z "$1" ]; then

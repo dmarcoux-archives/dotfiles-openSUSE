@@ -1,5 +1,5 @@
 # If youtube-dl is installed, set it up
-if type youtube-dl > /dev/null; then
+if type youtube-dl > /dev/null 2>&1; then
   # Save music under "~/Music/WebsiteName/" with the filename "MusicTitle---FormatNote-SourceId.AudioExtension"
   alias audio-dl='youtube-dl --output "~/Music/%(extractor_key)s/%(title)s---%(format_note)s-%(id)s.%(ext)s" --extract-audio --audio-format mp3'
 

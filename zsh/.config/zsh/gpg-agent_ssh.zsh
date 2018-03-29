@@ -5,4 +5,4 @@ if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
 fi
 
 # Refresh gpg-agent tty in case user switches into an X session
-gpg-connect-agent updatestartuptty /bye >/dev/null
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1

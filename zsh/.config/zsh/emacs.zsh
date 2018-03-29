@@ -1,5 +1,5 @@
 # If emacs is installed, set it up
-if type emacs > /dev/null; then
+if type emacs > /dev/null 2>&1; then
   alias em='emacs'
   # Script from dotfiles/scripts, which is in the PATH
   alias emacs='emacs_client.sh'

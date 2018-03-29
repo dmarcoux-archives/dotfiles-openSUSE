@@ -1,5 +1,5 @@
 # If fzf is installed, set it up
-if type fzf > /dev/null; then
+if type fzf > /dev/null 2>&1; then
   # Load default config files (completion and key bindings)
   # Completion at https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh
   # Key bindings at https://github.com/junegunn/fzf#key-bindings-for-command-line
@@ -8,7 +8,7 @@ if type fzf > /dev/null; then
   # fzf-marks: https://github.com/urbainvaes/fzf-marks
   # GNU General Public License v3.0
   if [[ -z "${MARKS_FILE}" ]] ; then
-    mkdir --parents $MARKS_DIR &> /dev/null
+    mkdir --parents $MARKS_DIR &> /dev/null 2>&1
   fi
 
   if [[ ! -f "${MARKS_FILE}" ]]; then
