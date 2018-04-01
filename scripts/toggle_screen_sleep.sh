@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 # Check if screen sleep is turned on/off
-xset q | grep 'DPMS is Disabled' &> /dev/null
-
-if [ "$?" -eq "0" ]; then
+if xset q | grep -q 'DPMS is Disabled' &> /dev/null; then
   # Turn on Energy Star features
   xset +dpms
 
