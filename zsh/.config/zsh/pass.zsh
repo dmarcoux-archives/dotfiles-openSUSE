@@ -8,16 +8,16 @@ if type pass > /dev/null 2>&1; then
       return
     fi
 
-    pass insert pass/$1
+    pass insert "pass/$1"
   }
 
   # Setup new two-factor authentication code from a QR code image
   n2fa(){
-    if [ -z "$@" ]; then
+    if [ -z "$1" ] || [ -z "$2" ]; then
       echo 'Usage: n2fa qr_code.jpg work/some_website.com=account (account is the email/username in the login)'
       return
     fi
 
-    zbarimg -q --raw $1 | pass otp insert otp/$2
+    zbarimg -q --raw "$1" | pass otp insert "otp/$2"
   }
 fi
