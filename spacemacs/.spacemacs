@@ -263,6 +263,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode nil)
+ '(evil-search-module (quote evil-search))
  '(evil-want-Y-yank-to-eol t)
  '(mode-require-final-newline t)
  '(package-selected-packages
