@@ -129,6 +129,9 @@ exec termite
 # Launch web browser
 exec $BROWSER
 
+# Launch IRC client
+exec hexchat
+
 # Launch time+location-based color temperature adjuster for monitors
 exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
 
