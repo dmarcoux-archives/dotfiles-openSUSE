@@ -99,6 +99,11 @@ exec --no-startup-id ~/dotfiles/scripts/toggle_touchpad_trackpoint.sh
 #################
 
 # Assign applications to workspaces to have them start on a specific workspace
+# - To find the class for the assign statement:
+#   1. Start program
+#   2. Start xprop
+#   3. Click on program's window
+#   4. Get value of 'WM_CLASS(STRING)' from xprop's output
 assign [class="^Firefox"] → $WS2
 assign [class="^Vlc$"] → $WS3
 assign [class="^Hexchat$"] → $WS3
