@@ -111,37 +111,37 @@ assign [class="^Hexchat$"] → $WS3
 # Kill potentially hung up audio server (it happens when a user logs out and back in)
 exec --no-startup-id killall pulseaudio
 
-# Start audio server
+# Launch audio server
 exec --no-startup-id pulseaudio --start
 
-# Start volume mixer
+# Launch volume mixer
 exec --no-startup-id pnmixer
 
-# Start daemon for automounting optical and removable drives
+# Launch daemon for automounting optical and removable drives
 exec --no-startup-id udiskie --tray
 
-# Start clipboard manager
+# Launch clipboard manager
 exec --no-startup-id clipmenud
 
-# Start a terminal
+# Launch terminal
 exec termite
 
-# Start a web browser
+# Launch web browser
 exec $BROWSER
 
-# Start time+location-based color temperature adjuster for monitors
+# Launch time+location-based color temperature adjuster for monitors
 exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
 
-# Start network manager
+# Launch network manager
 exec --no-startup-id nm-applet
 
-# Start emacs server (to launch spacemacs quickly)
+# Launch emacs server (to launch spacemacs quickly)
 exec --no-startup-id emacs --daemon
 
-# Start battery monitor if needed
+# Launch battery monitor if needed
 exec --no-startup-id ~/dotfiles/scripts/monitor_battery.sh
 
-# Start idle mouse cursor hider
+# Launch idle mouse cursor hider
 exec --no-startup-id unclutter
 
 #################
