@@ -1,0 +1,9 @@
+# When using 'beet import'
+import:
+  # Write metadata tags
+  write: yes
+  # Move files into library directory
+  move: yes
+# fetchart: Retrieves album art images from various sources on the Web and stores them as image files
+# lastgenre: Fetches tags from Last.fm and assigns them as genres to your albums and items
+plugins: fetchart lastgenre
