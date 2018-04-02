@@ -101,6 +101,7 @@ exec --no-startup-id ~/dotfiles/scripts/toggle_touchpad_trackpoint.sh
 # Assign applications to workspaces to have them start on a specific workspace
 assign [class="^Firefox"] → $WS2
 assign [class="^Vlc$"] → $WS3
+assign [class="^Hexchat$"] → $WS3
 
 # Kill potentially hung up audio server (it happens when a user logs out and back in)
 exec --no-startup-id killall pulseaudio
