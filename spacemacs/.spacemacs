@@ -255,6 +255,12 @@ before packages are loaded. If you are unsure, you should try in setting them in
     "," 'evil-repeat-find-char-reverse)
   )
 
+  ; Activate auto-fill mode for markdown (https://www.emacswiki.org/emacs/AutoFillMode)
+  ; Trigger auto-fill with Alt-q
+  (add-hook 'markdown-mode-hook #'auto-fill-mode)
+  ; Limit lines to 80 characters for markdown with auto-fill mode
+  (add-hook 'markdown-mode-hook (lambda () (setq fill-column 80)))
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
