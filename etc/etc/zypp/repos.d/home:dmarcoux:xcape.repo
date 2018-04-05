@@ -1,8 +1,0 @@
-[home:dmarcoux:xcape]
-name=home:dmarcoux:xcape
-enabled=1
-autorefresh=1
-baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/xcape/openSUSE_Tumbleweed/
-path=/
-type=rpm-md
-keeppackages=0

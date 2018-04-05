@@ -1,8 +1,0 @@
-[home:dmarcoux:git-lfs]
-name=home:dmarcoux:git-lfs
-enabled=1
-autorefresh=1
-baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/git-lfs/openSUSE_Tumbleweed/
-path=/
-type=rpm-md
-keeppackages=0

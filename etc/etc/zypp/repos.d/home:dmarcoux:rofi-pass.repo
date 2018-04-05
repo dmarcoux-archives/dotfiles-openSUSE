@@ -1,8 +1,0 @@
-[home:dmarcoux:rofi-pass]
-name=home:dmarcoux:rofi-pass
-enabled=1
-autorefresh=1
-baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/rofi-pass/openSUSE_Tumbleweed/
-path=/
-type=rpm-md
-keeppackages=0

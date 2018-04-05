@@ -1,0 +1,8 @@
+[home:dmarcoux]
+name=home:dmarcoux
+enabled=1
+autorefresh=1
+baseurl=https://download.opensuse.org/repositories/home:/dmarcoux/openSUSE_Tumbleweed/
+path=/
+type=rpm-md
+keeppackages=0

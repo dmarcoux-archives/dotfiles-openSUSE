@@ -1,8 +1,0 @@
-[home:dmarcoux:clipnotify]
-name=home:dmarcoux:clipnotify
-enabled=1
-autorefresh=1
-baseurl=https://download.opensuse.org/repositories/home:/dmarcoux:/clipnotify/openSUSE_Tumbleweed/
-path=/
-type=rpm-md
-keeppackages=0
