@@ -10,4 +10,6 @@ if type rbenv > /dev/null 2>&1; then
     # https://github.com/bbatsov/rubocop/blob/master/lib/rubocop/version.rb
     gem install --no-document rubocop --version 0.54.0
   fi
+
+  ealias rubocop='rubocop --parallel'
 fi
