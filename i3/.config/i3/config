@@ -19,6 +19,10 @@ set $WS3 "3:3"
 set $WS4 "4:4"
 set $WS5 "5:5"
 
+# Screens
+set $LAPTOP_SCREEN "eDP1"
+set $EXTERNAL_SCREEN "HDMI1"
+
 #################
 # Colorscheme
 #################
@@ -47,6 +51,9 @@ client.urgent            $red   $red       $light_beige
 #################
 # Settings
 #################
+
+# Put workspaces on specific screens
+workspace $WS3 output $LAPTOP_SCREEN
 
 # Window focus doesn't follow mouse movements
 focus_follows_mouse no
