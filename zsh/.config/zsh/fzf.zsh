@@ -41,7 +41,7 @@ if type fzf > /dev/null 2>&1; then
   # TODO: Fix -> Pressing Enter after is somehow blocking the shell... weird
   function jump() {
     local jumpline jumpdir marks
-    jumpline=$(fzf --bind=ctrl-y:accept --tac < "${MARKS_FILE}")
+    jumpline=$(fzf --bind=ctrl-y:accept < "${MARKS_FILE}")
     if [[ -n ${jumpline} ]]; then
       jumpdir=$(echo "${jumpline}" | sed -n "s/.* : \(.*\)$/\1/p" | sed "s#~#${HOME}#")
       marks=$(handle_symlinks)
