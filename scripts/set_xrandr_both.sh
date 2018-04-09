@@ -12,15 +12,15 @@ SECONDARY_3="VIRTUAL1"
 if (xrandr | grep "$SECONDARY_1 connected"); then
     xrandr --output $SECONDARY_2 --off
     xrandr --output $SECONDARY_3 --off
-    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_1 --auto --left-of $PRIMARY
+    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_1 --auto --right-of $PRIMARY
 elif (xrandr | grep "$SECONDARY_2 connected"); then
     xrandr --output $SECONDARY_1 --off
     xrandr --output $SECONDARY_3 --off
-    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_2 --auto --left-of $PRIMARY
+    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_2 --auto --right-of $PRIMARY
 elif (xrandr | grep "$SECONDARY_3 connected"); then
     xrandr --output $SECONDARY_1 --off
     xrandr --output $SECONDARY_2 --off
-    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_3 --auto --left-of $PRIMARY
+    xrandr --output $PRIMARY --primary --auto --output $SECONDARY_3 --auto --right-of $PRIMARY
 else
     xrandr --output $SECONDARY_1 --off
     xrandr --output $SECONDARY_2 --off
