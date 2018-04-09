@@ -77,6 +77,9 @@ bar {
     font pango:DejaVu Sans Mono 13
     strip_workspace_numbers yes
 
+    # Put the tray output on the primary screen
+    tray_output primary
+
     colors {
         # Solarized (Light) colors
         background $light_beige
