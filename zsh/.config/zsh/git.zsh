@@ -66,7 +66,7 @@ add_repo() {
   # Remove source remote from destination
   git remote rm source
 
-  # Manual steps to be sure everything is fine
-  # git log
-  # git push
+  echo 'Manual steps to be sure everything is fine'
+  echo 'git log'
+  echo 'git push'
 }
