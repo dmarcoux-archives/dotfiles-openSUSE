@@ -1,12 +1,16 @@
 ealias g='git'
 ealias ga='git add'
+# List branches
 ealias gbra='git branch'
 ealias gchp='git cherry-pick'
 ealias gcko='git checkout'
+# Create a new branch from current branch
 ealias gckob='git checkout -b'
 # Select a branch with fzf and switch to it
 alias gckof='git branch | fzf | cut --characters=3- | xargs --no-run-if-empty git checkout'
 ealias gclo='git clone'
+ealias gco='git commit'
+# Create a git commit with message (it skips any git commit message template set in config)
 ealias gcom='git commit -m'
 ealias gcoma='git commit --amend'
 ealias gdi='git diff'
@@ -19,6 +23,7 @@ ealias gmer='git merge'
 # Select a branch with fzf and merge it in the current branch
 alias gmerf='git branch | fzf | cut --characters=3- | xargs --no-run-if-empty git merge'
 ealias gpu='git push'
+# Force push changes, but only if it won't overwrite changes from someone else on remote
 ealias gpuf='git push --force-with-lease'
 ealias gpure='git pull --rebase --autostash'
 ealias greb='git rebase'
