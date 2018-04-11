@@ -100,7 +100,7 @@ if type hub > /dev/null 2>&1; then
 
       # Pass GITHUB_TOKEN with personal access token to avoid storing GitHub credentials ('man hub' for details)
       # Generate a personal access token at https://github.com/settings/tokens/new
-      GITHUB_TOKEN="$(pass pass/me/hub-access-token)" hub fork
+      GITHUB_TOKEN="$(pass pass/me/hub-cli-github-access-token)" hub fork
 
       # Rename remotes created by hub
       # - origin (repository) is renamed to upstream
