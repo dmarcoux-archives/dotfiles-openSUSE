@@ -9,9 +9,12 @@ ealias gckob='git checkout -b'
 # Select a branch with fzf and switch to it
 alias gckof='git branch | fzf | cut --characters=3- | xargs --no-run-if-empty git checkout'
 ealias gclo='git clone'
+# Create a git commit (it will use any git commit message template set in config)
 ealias gco='git commit'
 # Create a git commit with message (it skips any git commit message template set in config)
 ealias gcom='git commit -m'
+# Create a git commit with a message and open the editor (it skips any git commit message template set in config)
+ealias gcoem='git commit -e -m'
 ealias gcoma='git commit --amend'
 ealias gdi='git diff'
 ealias gdis='git diff --staged'
