@@ -18,6 +18,7 @@ ealias gcoem='git commit -e -m'
 ealias gcoma='git commit --amend'
 ealias gdi='git diff'
 ealias gdis='git diff --staged'
+ealias gf='git fetch'
 # Output: abbreviated_commit_hash (%h) | commit_message (%s) | author_name (%an, in yellow) | commit_date_relative (%cr, in green)
 alias glo='git log --pretty=format:"%h %C(bold)|%C(reset) %s %C(bold)|%C(reset) %C(yellow)%an%C(reset) %C(bold)|%C(reset) %C(green)%cr%C(reset)"'
 # Copy a string from the output of the glo alias (a commit hash for example)
