@@ -90,7 +90,7 @@ bar {
     }
 }
 
-exec --no-startup-id ~/dotfiles/scripts/set_keyboard_layout.sh
+exec_always --no-startup-id ~/dotfiles/scripts/set_keyboard_layout.sh
 
 exec_always --no-startup-id ~/dotfiles/scripts/set_xrandr_dpi.sh
 
