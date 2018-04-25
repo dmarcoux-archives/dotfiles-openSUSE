@@ -44,6 +44,7 @@ ealias gsh='git show'
 alias gshf='glo | fzf --ansi --no-sort --preview "echo {} | cut --delimiter=\" \" --fields=1 | xargs git show" | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git show'
 ealias gst='git status'
 ealias gsta='git stash'
+ealias gsu='git submodule update'
 
 # Add a Git repository (source) with its complete history to another one (destination). It doesn't overwrite the destination, the source's history is simply added
 # - "source" and "destination" have to be the URL to a repo. Example: git@github.com:dmarcoux/dotfiles.git
