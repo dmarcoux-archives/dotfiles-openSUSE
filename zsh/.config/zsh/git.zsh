@@ -124,5 +124,7 @@ if type hub > /dev/null 2>&1; then
 
     # Push updated master to my fork
     git push origin master
+
+    git submodule update
   }
 fi
