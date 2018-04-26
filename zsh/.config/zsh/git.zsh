@@ -2,6 +2,8 @@ ealias g='git'
 ealias ga='git add'
 # List branches
 ealias gbra='git branch'
+# Delete merged branches after confirming (with y)
+ealias gbramd='git branch --merged | grep --extended-regexp --invert-match "(^\*|master)" | cut --characters=3- | xargs --no-run-if-empty --interactive git branch --delete'
 ealias gchp='git cherry-pick'
 ealias gcko='git checkout'
 # Create a new branch from current branch
