@@ -157,10 +157,6 @@ exec --no-startup-id unclutter
 # Key bindings
 #################
 
-# Brightness adjustment function keys
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
-
 # Restart i3 (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
