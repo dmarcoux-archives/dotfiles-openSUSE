@@ -160,28 +160,6 @@ exec --no-startup-id unclutter
 # Restart i3 (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# To be able to shutdown and reboot, do the following:
-# 1. sudo visudo -f /etc/sudoers.d/shutdown
-# 2. dany ALL = NOPASSWD: /usr/bin/systemctl poweroff,/usr/bin/systemctl reboot
-set $system_mode System: (l) Lock, (Shift+q) Logout, (Shift+s) Shutdown, (Shift+r) Reboot, (Escape) Go back to default mode
-mode "$system_mode" {
-    # Lock the system
-    bindsym l exec --no-startup-id "i3lock --color=$light_beige", mode "default"
-
-    # Logout of the current session
-    bindsym Shift+q exec --no-startup-id i3-msg exit
-
-    # Reboot the system
-    bindsym Shift+r exec --no-startup-id systemctl reboot
-
-    # Shutdown the system
-    bindsym Shift+s exec --no-startup-id systemctl poweroff
-
-    # Exit the system mode with Escape
-    bindsym Escape mode "default"
-}
-bindsym $mod+Pause mode "$system_mode"
-
 # Start a terminal
 bindsym $mod+Return exec termite
 
