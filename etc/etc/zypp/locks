@@ -32,5 +32,11 @@ solvable_name: xfce4-panel
 type: package
 match_type: glob
 case_sensitive: on
+solvable_name: xfdesktop
+
+
+type: package
+match_type: glob
+case_sensitive: on
 solvable_name: xfwm4
 
