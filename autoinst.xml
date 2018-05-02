@@ -1,18 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
-  <add-on>
-    <add_on_products config:type="list">
-      <listentry>
-        <media_url><![CDATA[http://download.opensuse.org/tumbleweed/repo/non-oss/]]></media_url>
-        <product>openSUSE-Addon-NonOss</product>
-        <product_dir>/</product_dir>
-      </listentry>
-    </add_on_products>
-  </add-on>
-  <deploy_image>
-    <image_installation config:type="boolean">false</image_installation>
-  </deploy_image>
   <software>
     <image/>
     <install_recommended config:type="boolean">true</install_recommended>
@@ -26,13 +14,19 @@
       <package>yast2-schema</package>
       <package>yast2-alternatives</package>
       <package>xsel</package>
+      <package>xournal</package>
       <package>xfsprogs</package>
+      <package>xfce4-settings</package>
+      <package>xfce4-session</package>
+      <package>xfce4-screenshooter</package>
       <package>xf86-video-intel</package>
+      <package>xdpyinfo</package>
+      <package>xdotool</package>
       <package>xclip</package>
       <package>xcape</package>
-      <package>xbindkeys</package>
       <package>xbacklight</package>
       <package>wpa_supplicant</package>
+      <package>vlc</package>
       <package>vim-data</package>
       <package>vim</package>
       <package>viewnior</package>
@@ -44,22 +38,24 @@
       <package>splix</package>
       <package>snapper</package>
       <package>simple-scan</package>
+      <package>signal-desktop</package>
       <package>shim</package>
+      <package>ruby-build</package>
       <package>rpm</package>
       <package>rofi-dmenu</package>
       <package>rofi</package>
       <package>redshift-gtk</package>
       <package>ranger</package>
+      <package>python3-keyring</package>
       <package>pwgen</package>
       <package>pulseaudio</package>
-      <package>pnmixer</package>
+      <package>pnmixer-git</package>
       <package>pinentry-gtk2</package>
       <package>perl-File-MimeInfo</package>
       <package>perl-File-DesktopEntry</package>
       <package>pavucontrol</package>
       <package>password-store</package>
       <package>pass-otp</package>
-      <package>parcellite</package>
       <package>osc</package>
       <package>openvpn</package>
       <package>openSUSE-release</package>
@@ -67,9 +63,9 @@
       <package>numactl</package>
       <package>mupdf</package>
       <package>mokutil</package>
-      <package>mksusecd</package>
       <package>libswresample2</package>
       <package>libreoffice-writer</package>
+      <package>libgnomesu</package>
       <package>libavutil55</package>
       <package>libavformat57</package>
       <package>libavformat56</package>
@@ -80,18 +76,21 @@
       <package>kexec-tools</package>
       <package>jq</package>
       <package>iw</package>
-      <package>irssi</package>
       <package>irqbalance</package>
       <package>imagewriter</package>
-      <package>i3lock-color</package>
+      <package>i3lock</package>
       <package>i3</package>
+      <package>hub</package>
       <package>hplip</package>
+      <package>hexchat-plugins-python3</package>
+      <package>hexchat</package>
       <package>gvim</package>
       <package>gutenprint</package>
       <package>grub2-x86_64-efi</package>
       <package>golang-github-junegunn-fzf</package>
-      <package>gnome-screenshot</package>
+      <package>gnome-calculator</package>
       <package>glibc</package>
+      <package>git-lfs</package>
       <package>git-core</package>
       <package>fzf-zsh-completion</package>
       <package>fzf</package>
@@ -113,11 +112,11 @@
       <package>cmus-plugin-pulse</package>
       <package>cmus-plugin-ffmpeg</package>
       <package>cmus</package>
-      <package>cbatticon</package>
-      <package>caffeine</package>
+      <package>clipmenu</package>
+      <package>chromium</package>
       <package>build</package>
       <package>btrfsprogs</package>
-      <package>aws-cli</package>
+      <package>beets</package>
       <package>autoyast2</package>
       <package>alsa-firmware</package>
       <package>ShellCheck</package>
@@ -135,6 +134,7 @@
       <pattern>fonts_opt</pattern>
       <pattern>laptop</pattern>
       <pattern>minimal_base</pattern>
+      <pattern>multimedia_opt</pattern>
       <pattern>sw_management</pattern>
       <pattern>x11</pattern>
       <pattern>x11_opt</pattern>
@@ -142,12 +142,17 @@
       <pattern>yast2_basis</pattern>
     </patterns>
     <products config:type="list">
-      <listentry>openSUSE</listentry>
+      <product>openSUSE</product>
     </products>
     <remove-packages config:type="list">
-      <package>plymouth-branding-openSUSE</package>
-      <package>plymouth</package>
-      <package>plymouth</package>
+      <package>xscreensaver</package>
+      <package>xfwm4</package>
+      <package>thunar</package>
+      <package>icedtea-web</package>
+      <package>ibus</package>
+      <package>highlight</package>
+      <package>xfdesktop</package>
+      <package>xfce4-panel</package>
     </remove-packages>
   </software>
 </profile>
