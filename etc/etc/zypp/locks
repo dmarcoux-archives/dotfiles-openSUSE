@@ -40,3 +40,9 @@ match_type: glob
 case_sensitive: on
 solvable_name: xfwm4
 
+
+type: package
+match_type: glob
+case_sensitive: on
+solvable_name: xscreensaver
+
