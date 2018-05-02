@@ -20,6 +20,12 @@ solvable_name: ibus
 type: package
 match_type: glob
 case_sensitive: on
+solvable_name: icedtea-web
+
+
+type: package
+match_type: glob
+case_sensitive: on
 solvable_name: thunar
 
 
