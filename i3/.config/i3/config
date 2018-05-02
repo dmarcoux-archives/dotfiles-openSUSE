@@ -160,6 +160,9 @@ exec --no-startup-id unclutter
 # Restart i3 (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+# Lock the screen
+bindsym $mod+Shift+C exec --no-startup-id "i3lock --show-failed-attempts --color=$light_beige"
+
 # Start a terminal
 bindsym $mod+Return exec termite
 
