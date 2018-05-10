@@ -18,6 +18,6 @@ if type pass > /dev/null 2>&1; then
       return
     fi
 
-    zbarimg -q --raw "$1" | pass otp insert "otp/$2"
+    zbarimg --quiet --raw "$1" | pass otp insert "otp/$2"
   }
 fi
