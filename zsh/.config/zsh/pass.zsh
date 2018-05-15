@@ -14,6 +14,18 @@ if type pass > /dev/null 2>&1; then
     pass insert "pass/$1"
   }
 
+  # Setup new generated password
+  new_generated_password(){
+     if [ -z "$1" ]; then
+      # Display usage if no parameters given
+      echo "Usage: ${funcstack[1]} me/some_website.com=account [password_length] (account is the email/username in the login)"
+      return
+    fi
+
+    # Whenever the password length wasn't provided, it will default to PASSWORD_STORE_GENERATED_LENGTH
+    pass generate --clip "pass/$1" "$2"
+  }
+
   # Setup new two-factor authentication code from a QR code image
   new_2fa(){
     if [ -z "$1" ] || [ -z "$2" ]; then
