@@ -182,7 +182,10 @@ fi
 # If pass is installed
 if type pass > /dev/null; then
   # Do not pollute the home directory
-  export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass/passwords
+  export PASSWORD_STORE_DIR="$XDG_CONFIG_HOME/pass/passwords"
+
+  # Default length for generated passwords
+  export PASSWORD_STORE_GENERATED_LENGTH=30
 fi
 
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
