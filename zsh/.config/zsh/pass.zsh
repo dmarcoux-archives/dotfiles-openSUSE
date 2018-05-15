@@ -1,5 +1,8 @@
 # If pass is installed, set it up
 if type pass > /dev/null 2>&1; then
+  # Default length for generated passwords
+  export PASSWORD_STORE_GENERATED_LENGTH=30
+
   # Setup new password
   new_password(){
     if [ -z "$1" ]; then
