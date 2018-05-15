@@ -153,6 +153,9 @@ exec --no-startup-id xfce4-power-manager
 # Launch idle mouse cursor hider
 exec --no-startup-id unclutter
 
+# Launch screen locker
+exec --no-startup-id light-locker
+
 #################
 # Key bindings
 #################
@@ -161,7 +164,7 @@ exec --no-startup-id unclutter
 bindsym $mod+Shift+r restart
 
 # Lock the screen
-bindsym $mod+Shift+C exec --no-startup-id "i3lock --show-failed-attempts --color=$light_beige"
+bindsym $mod+Shift+C exec --no-startup-id "light-locker-command --lock"
 
 # Start a terminal
 bindsym $mod+Return exec termite
