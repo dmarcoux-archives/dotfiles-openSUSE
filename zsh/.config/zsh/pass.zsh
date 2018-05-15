@@ -1,10 +1,10 @@
 # If pass is installed, set it up
 if type pass > /dev/null 2>&1; then
   # Setup new password
-  nppp(){
+  new_password(){
     if [ -z "$1" ]; then
       # Display usage if no parameters given
-      echo 'Usage: nppp me/some_website.com=account (account is the email/username in the login)'
+      echo "Usage: ${funcstack[1]} me/some_website.com=account (account is the email/username in the login)"
       return
     fi
 
@@ -12,9 +12,9 @@ if type pass > /dev/null 2>&1; then
   }
 
   # Setup new two-factor authentication code from a QR code image
-  n2fa(){
+  new_2fa(){
     if [ -z "$1" ] || [ -z "$2" ]; then
-      echo 'Usage: n2fa qr_code.jpg work/some_website.com=account (account is the email/username in the login)'
+      echo "Usage: ${funcstack[1]} qr_code.jpg work/some_website.com=account (account is the email/username in the login)"
       return
     fi
 
