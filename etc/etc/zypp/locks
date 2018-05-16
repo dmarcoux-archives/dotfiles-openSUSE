@@ -14,6 +14,12 @@ solvable_name: highlight
 type: package
 match_type: glob
 case_sensitive: on
+solvable_name: i3lock
+
+
+type: package
+match_type: glob
+case_sensitive: on
 solvable_name: ibus
 
 
