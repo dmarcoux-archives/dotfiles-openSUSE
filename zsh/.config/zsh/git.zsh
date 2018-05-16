@@ -14,9 +14,9 @@ ealias gclo='git clone'
 # Create a git commit (it will use any git commit message template set in config)
 ealias gco='git commit'
 # Create a git commit with message (it skips any git commit message template set in config)
-ealias gcom='git commit -m'
+ealias gcom='git commit --message'
 # Create a git commit with a message and open the editor (it skips any git commit message template set in config)
-ealias gcoem='git commit -e -m'
+ealias gcoem='git commit --edit --message'
 ealias gcoma='git commit --amend'
 ealias gdi='git diff'
 ealias gdis='git diff --staged'
@@ -62,7 +62,7 @@ add_repo() {
 
   # Setup temporary directories
   mkdir ~/tmp
-  rm -rf ~/tmp/source ~/tmp/destination
+  rm --recursive --force ~/tmp/source ~/tmp/destination
 
   # Clone source and destination Git repositories
   git clone $SOURCE ~/tmp/source
