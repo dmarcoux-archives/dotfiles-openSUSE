@@ -32,6 +32,7 @@
       <package>viewnior</package>
       <package>unclutter</package>
       <package>udiskie</package>
+      <package>tumbleweed-cli</package>
       <package>the_silver_searcher</package>
       <package>termite</package>
       <package>stow</package>
