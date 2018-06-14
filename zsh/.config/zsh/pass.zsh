@@ -20,7 +20,7 @@ if type pass > /dev/null 2>&1; then
     fi
 
     # Whenever the password length wasn't provided, it will default to PASSWORD_STORE_GENERATED_LENGTH
-    pass generate --clip "pass/$1" "$2"
+    pass generate --no-symbols --clip "pass/$1" "$2"
   }
 
   # Select a password with fzf and regenerate it
