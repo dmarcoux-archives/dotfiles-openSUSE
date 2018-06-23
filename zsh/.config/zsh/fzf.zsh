@@ -8,7 +8,7 @@ if type fzf > /dev/null 2>&1; then
   # TODO: Fix minor bug which doesn't display VCS info
   function cd_to_ranger_bookmark() {
     local directory
-    directory=$(cat "$HOME/dotfiles/ranger/.config/ranger/bookmarks" | sed -n "s/.*:\(.*\)$/\1/p" | fzf)
+    directory=$(cat "$HOME/dotfiles/ranger/.config/ranger/bookmarks" | sed -n "s/.*:\(.*\)$/\1/p" | sort | fzf)
 
     cd "$directory" || exit
 
