@@ -32,4 +32,7 @@ if type osc > /dev/null 2>&1; then
 
   # Check out content from the repository
   ealias oco='osc checkout'
+
+  # Create a new package
+  ealias omp='osc mkpac'
 fi
