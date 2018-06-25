@@ -13,6 +13,7 @@
       <package>yast2-sound</package>
       <package>yast2-schema</package>
       <package>yast2-alternatives</package>
+      <package>yank</package>
       <package>xsel</package>
       <package>xournal</package>
       <package>xfsprogs</package>
@@ -26,11 +27,14 @@
       <package>xcape</package>
       <package>xbacklight</package>
       <package>wpa_supplicant</package>
+      <package>vlc-codec-gstreamer</package>
       <package>vlc</package>
       <package>vim-data</package>
       <package>vim</package>
       <package>viewnior</package>
+      <package>units</package>
       <package>unclutter</package>
+      <package>udiskie-lang</package>
       <package>udiskie</package>
       <package>tumbleweed-cli</package>
       <package>the_silver_searcher</package>
@@ -45,15 +49,19 @@
       <package>rpm</package>
       <package>rofi-dmenu</package>
       <package>rofi</package>
+      <package>remind</package>
       <package>redshift-gtk</package>
       <package>ranger</package>
+      <package>python3-py2pack</package>
       <package>python3-keyring</package>
+      <package>python3-docker-compose</package>
       <package>pwgen</package>
       <package>pulseaudio</package>
       <package>pnmixer-git</package>
       <package>pinentry-gtk2</package>
       <package>perl-File-MimeInfo</package>
       <package>perl-File-DesktopEntry</package>
+      <package>pdftk</package>
       <package>pavucontrol</package>
       <package>password-store</package>
       <package>pass-otp</package>
@@ -64,6 +72,9 @@
       <package>numactl</package>
       <package>mupdf</package>
       <package>mokutil</package>
+      <package>lightdm</package>
+      <package>light-locker</package>
+      <package>libvidstab1_1</package>
       <package>libswresample2</package>
       <package>libreoffice-writer</package>
       <package>libgnomesu</package>
@@ -79,7 +90,6 @@
       <package>iw</package>
       <package>irqbalance</package>
       <package>imagewriter</package>
-      <package>i3lock</package>
       <package>i3</package>
       <package>hub</package>
       <package>hplip</package>
@@ -88,12 +98,10 @@
       <package>gvim</package>
       <package>gutenprint</package>
       <package>grub2-x86_64-efi</package>
-      <package>golang-github-junegunn-fzf</package>
       <package>gnome-calculator</package>
       <package>glibc</package>
       <package>git-lfs</package>
       <package>git-core</package>
-      <package>fzf-zsh-completion</package>
       <package>fzf</package>
       <package>fwts</package>
       <package>fuse-exfat</package>
@@ -105,7 +113,6 @@
       <package>efibootmgr</package>
       <package>e2fsprogs</package>
       <package>dosfstools</package>
-      <package>docker-compose</package>
       <package>docker</package>
       <package>dbeaver</package>
       <package>cups-backends</package>
@@ -121,6 +128,7 @@
       <package>autoyast2</package>
       <package>alsa-firmware</package>
       <package>ShellCheck</package>
+      <package>NetworkManager-openvpn</package>
       <package>MozillaFirefox</package>
       <package>Mesa-dri-32bit</package>
       <package>Mesa-dri</package>
@@ -148,12 +156,13 @@
     <remove-packages config:type="list">
       <package>xscreensaver</package>
       <package>xfwm4</package>
+      <package>xfdesktop</package>
+      <package>xfce4-panel</package>
       <package>thunar</package>
       <package>icedtea-web</package>
       <package>ibus</package>
+      <package>i3lock</package>
       <package>highlight</package>
-      <package>xfdesktop</package>
-      <package>xfce4-panel</package>
     </remove-packages>
   </software>
 </profile>
