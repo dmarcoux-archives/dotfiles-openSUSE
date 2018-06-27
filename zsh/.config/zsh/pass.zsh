@@ -23,12 +23,6 @@ if type pass > /dev/null 2>&1; then
     pass generate --no-symbols --clip "pass/$1" "$2"
   }
 
-  # Select a password with fzf and regenerate it
-  # TODO: Decide when the length as to be provided (otherwise it's the default length)
-  regenerate_password(){
-    find "$PASSWORD_STORE_DIR/pass" -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\(.*\)\.gpg|\1|g" | fzf | xargs --no-run-if-empty pass generate --clip
-  }
-
   # Setup new two-factor authentication code from a QR code image
   new_2fa(){
     if [ -z "$1" ] || [ -z "$2" ]; then
