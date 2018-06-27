@@ -32,6 +32,7 @@ if type osc > /dev/null 2>&1; then
 
   # Submit request to a project
   ealias osr='osc submitrequest'
+  # TODO: Snippet to submit request to openSUSE:Factory 'osr devel:project:abc/the_package openSUSE:Factory'
 
   # Show status of files
   ealias ost='osc st'
