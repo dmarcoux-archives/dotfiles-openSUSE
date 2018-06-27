@@ -35,4 +35,7 @@ if type osc > /dev/null 2>&1; then
 
   # Create a new package
   ealias omp='osc mkpac'
+
+  # Submit request to a project
+  ealias osr='osc submitrequest'
 fi
