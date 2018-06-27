@@ -19,7 +19,7 @@ if type pass > /dev/null 2>&1; then
       return
     fi
 
-    # Whenever the password length wasn't provided, it will default to PASSWORD_STORE_GENERATED_LENGTH
+    # Whenever the password length ("$2") wasn't provided, it will default to PASSWORD_STORE_GENERATED_LENGTH
     pass generate --no-symbols --clip "pass/$1" "$2"
   }
 
