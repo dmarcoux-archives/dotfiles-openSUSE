@@ -21,6 +21,9 @@ if type osc > /dev/null 2>&1; then
   # Check out content from the repository
   ealias oco='osc checkout'
 
+  # Generates a diff, comparing local changes against the repository server
+  ealias odi='osc diff'
+
   # Download files referenced via source URL in the project's spec file
   ealias odl='osc service localrun download_files'
 
