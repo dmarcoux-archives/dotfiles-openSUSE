@@ -33,6 +33,9 @@ if type osc > /dev/null 2>&1; then
   # Mark file(s) to be deleted upon next commit
   ealias orm='osc rm'
 
+  # Clean spec file and display the diff
+  ealias osp='spec-cleaner --diff'
+
   # Submit request to a project
   ealias osr='osc submitrequest'
   # TODO: Snippet to submit request to openSUSE:Factory 'osr devel:project:abc/the_package openSUSE:Factory'
