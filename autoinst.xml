@@ -41,6 +41,7 @@
       <package>termite</package>
       <package>stow</package>
       <package>splix</package>
+      <package>spec-cleaner</package>
       <package>snapper</package>
       <package>simple-scan</package>
       <package>signal-desktop</package>
@@ -55,6 +56,7 @@
       <package>python3-py2pack</package>
       <package>python3-keyring</package>
       <package>python3-docker-compose</package>
+      <package>pyenv</package>
       <package>pwgen</package>
       <package>pulseaudio</package>
       <package>pnmixer-git</package>
@@ -126,6 +128,7 @@
       <package>btrfsprogs</package>
       <package>beets</package>
       <package>autoyast2</package>
+      <package>asciinema</package>
       <package>alsa-firmware</package>
       <package>ShellCheck</package>
       <package>NetworkManager-openvpn</package>
