@@ -6,7 +6,9 @@
 # -x: Write to standard error a trace for each command after it expands the command and before it executes it
 set -eux
 
-# Setup spacemacs
+BACKUP_DIR="$HOME/dotfiles/backup/$HOSTNAME/keys"
+
+echo 'Setup spacemacs'
 # - Remove emacs files
 # - Install spacemacs
 # - Install spacemacs' layers (only needed the first time)
@@ -14,20 +16,61 @@ rm -rf ~/.emacs.d
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 emacs
 
-# Install vim's plugin
+echo "Install vim's plugin"
 vim +PlugInstall +qall
 
 # Set login shell
 echo "Enter your user's password (not root)"
 chsh -s "$(command -v zsh)"
 
-# Add user to docker group
+echo 'Add user to docker group'
 sudo gpasswd --add "$(whoami)" docker
 
-# Enable docker service
+echo 'Enable docker service'
 systemctl enable --now docker
 
-# Add SSH key to gpg-agent
+echo 'Restore GPG and SSH keys?'
+select choice in "Yes" "No"; do
+  case $choice in
+    Yes ) DECRYPT_TRIES=3
+          TRIES=0
+
+          echo "Decrypting encrypted tar archive (Maximum $DECRYPT_TRIES tries)"
+          # Until X unsuccessful tries OR tar archive successfully decrypted
+          until [ $TRIES -eq $DECRYPT_TRIES ] || [ -e "$BACKUP_DIR/keys.tar" ]; do
+            # || true - to not trigger set -e
+            gpg --quiet --output "$BACKUP_DIR/keys.tar" --decrypt "$BACKUP_DIR/keys.tar.gpg" || true
+
+            echo 'Reloading GPG agent to clear the cached passphrase'
+            gpg-connect-agent reloadagent /bye 1> /dev/null;
+
+            TRIES=$((TRIES + 1))
+          done
+
+          if [ ! -e "$BACKUP_DIR/keys.tar" ]; then
+            echo 'Failed to decrypt tar archive. NOT restoring GPG and SSH keys...'
+            break
+          fi
+
+          echo 'Extracting GPG and SSH keys from unencrypted tar archive'
+          (cd "$BACKUP_DIR" && tar xvf keys.tar 1> /dev/null)
+
+          echo 'Restoring GPG keys and their trusts'
+          gpg --import "$BACKUP_DIR/secrets.asc"
+          gpg --import-ownertrust "$BACKUP_DIR/otrust.txt"
+
+          echo 'Restoring SSH keys'
+          cp "$BACKUP_DIR"/*id_rsa* ~/.ssh/
+
+          echo 'Removing exported GPG/SSH keys and the unencrypted tar archive'
+          (cd "$BACKUP_DIR" && rm secrets.asc otrust.txt ./*id_rsa* keys.tar)
+
+          break ;;
+    No ) break ;;
+  esac
+done
+
+echo 'Add SSH key to gpg-agent'
 ssh-add ~/.ssh/id_rsa
 
 echo "Logout or restart computer to refresh the user's groups"
