@@ -18,6 +18,7 @@ emacs
 vim +PlugInstall +qall
 
 # Set login shell
+echo "Enter your user's password (not root)"
 chsh -s "$(command -v zsh)"
 
 # Add user to docker group
