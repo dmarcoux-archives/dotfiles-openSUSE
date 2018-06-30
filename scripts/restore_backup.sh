@@ -18,7 +18,7 @@ emacs
 vim +PlugInstall +qall
 
 # Set login shell
-chsh -s "$(which zsh)"
+chsh -s "$(command -v zsh)"
 
 # Add user to docker group
 sudo gpasswd --add "$(whoami)" docker
