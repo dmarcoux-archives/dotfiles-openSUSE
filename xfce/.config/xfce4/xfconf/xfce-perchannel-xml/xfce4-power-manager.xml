@@ -5,14 +5,14 @@
     <property name="brightness-level-on-ac" type="empty"/>
     <property name="brightness-level-on-battery" type="empty"/>
     <property name="brightness-on-ac" type="empty"/>
-    <property name="brightness-on-battery" type="empty"/>
+    <property name="brightness-on-battery" type="uint" value="9"/>
     <property name="critical-power-action" type="empty"/>
     <property name="critical-power-level" type="empty"/>
     <property name="dpms-enabled" type="empty"/>
     <property name="dpms-on-ac-off" type="empty"/>
-    <property name="dpms-on-ac-sleep" type="empty"/>
+    <property name="dpms-on-ac-sleep" type="uint" value="0"/>
     <property name="dpms-on-battery-off" type="empty"/>
-    <property name="dpms-on-battery-sleep" type="empty"/>
+    <property name="dpms-on-battery-sleep" type="uint" value="0"/>
     <property name="general-notification" type="empty"/>
     <property name="hibernate-button-action" type="empty"/>
     <property name="inactivity-on-ac" type="empty"/>
@@ -33,5 +33,7 @@
     <property name="presentation-mode" type="bool" value="false"/>
     <property name="show-panel-label" type="int" value="3"/>
     <property name="handle-brightness-keys" type="bool" value="true"/>
+    <property name="blank-on-battery" type="int" value="0"/>
+    <property name="blank-on-ac" type="int" value="0"/>
   </property>
 </channel>
