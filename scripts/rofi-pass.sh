@@ -9,7 +9,7 @@ if [ -z "$*" ]; then
 
   # List full paths of passwords stored by pass under $PASSWORD_STORE_DIR/pass
   # Keep the relative paths of these passwords without the .gpg extension (just like how pass does it)
-  find "$PASSWORD_STORE_DIR/pass" -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\(.*\)\.gpg|\1|g"
+  find "$PASSWORD_STORE_DIR/pass" -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\\(.*\\)\\.gpg|\\1|g" | sort
 else
   # Once the user selected a password, rofi calls the script again with the selected password as an argument
 

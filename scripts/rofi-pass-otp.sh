@@ -9,7 +9,7 @@ if [ -z "$*" ]; then
 
   # List full paths of one-time passwords stored by pass under $PASSWORD_STORE_DIR/otp
   # Keep the relative paths of these one-time passwords without the .gpg extension (just like how pass does it)
-  find "$PASSWORD_STORE_DIR/otp" -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\(.*\)\.gpg|\1|g"
+  find "$PASSWORD_STORE_DIR/otp" -name "*.gpg" -print | sed -e "s|$PASSWORD_STORE_DIR/\\(.*\\)\\.gpg|\\1|g" | sort
 else
   # Once the user selected an entry, rofi calls the script again with it as an argument
 
