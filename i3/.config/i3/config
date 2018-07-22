@@ -191,6 +191,9 @@ bindsym $mod+d exec rofi -show drun # Only list applications shipping a .desktop
 # Start window switcher
 bindsym $mod+s exec rofi -show window
 
+# Start rofi frontend to pass for my usernames
+bindsym $mod+u exec rofi -show pass-username
+
 # Start rofi frontend to pass-otp for my two-factor authentication (2FA) codes
 bindsym $mod+o exec rofi -show pass-otp
 
