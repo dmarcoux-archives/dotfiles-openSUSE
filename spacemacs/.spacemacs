@@ -23,7 +23,6 @@
                       auto-completion-return-key-behavior nil
                       auto-completion-tab-key-behavior nil)
      emacs-lisp
-     haskell
      helm
      (ruby :variables
            ruby-enable-enh-ruby-mode t
@@ -34,11 +33,6 @@
                     sh-basic-offset 2
                     sh-indentation 2)
      nginx
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
-     ;; version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
