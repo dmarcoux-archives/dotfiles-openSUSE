@@ -15,7 +15,8 @@
      (javascript :variables
                  js-indent-level 2
                  js2-basic-offset 2)
-     html
+     (html :variables
+           css-indent-offset 2)
      sql
      yaml
      (auto-completion :variables
