@@ -16,7 +16,7 @@ if type osc > /dev/null 2>&1; then
   ealias obt='osc build --target=openSUSE_Tumbleweed/x86_64'
 
   # Push changes to remote
-  ealias oci='osc ci'
+  ealias oci='osc commit'
 
   # Check out content from the repository
   ealias oco='osc checkout'
@@ -31,7 +31,7 @@ if type osc > /dev/null 2>&1; then
   ealias omp='osc mkpac'
 
   # Mark file(s) to be deleted upon next commit
-  ealias orm='osc rm'
+  ealias orm='osc delete'
 
   # Clean spec file and display the diff
   ealias osp='spec-cleaner --diff'
@@ -41,7 +41,7 @@ if type osc > /dev/null 2>&1; then
   # TODO: Snippet to submit request to openSUSE:Factory 'osr devel:project:abc/the_package openSUSE:Factory'
 
   # Show status of files
-  ealias ost='osc st'
+  ealias ost='osc status'
 
   # Show reason why a package got triggered to build
   ealias otr='osc triggerreason'
