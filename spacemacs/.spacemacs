@@ -11,28 +11,28 @@
    ;; See available layers with <SPC> h l
    dotspacemacs-configuration-layers
    '(
-     (go :variables go-tab-width 4)
-     (javascript :variables
-                 js-indent-level 2
-                 js2-basic-offset 2)
-     (html :variables
-           css-indent-offset 2)
-     sql
-     yaml
      (auto-completion :variables
                       auto-completion-return-key-behavior nil
                       auto-completion-tab-key-behavior nil)
      emacs-lisp
+     (go :variables go-tab-width 4)
      helm
+     (html :variables
+           css-indent-offset 2)
+     (javascript :variables
+                 js-indent-level 2
+                 js2-basic-offset 2)
+     markdown
+     nginx
      (ruby :variables
            ruby-enable-enh-ruby-mode t
            ruby-deep-indent-paren nil)
-     markdown
-     syntax-checking
      (shell-scripts :variables
                     sh-basic-offset 2
                     sh-indentation 2)
-     nginx
+     sql
+     syntax-checking
+     yaml
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
