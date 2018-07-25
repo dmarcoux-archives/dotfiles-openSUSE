@@ -59,6 +59,7 @@ sedp() {
   sed -n "s/^.*\($1\).*$/\1/p"
 }
 
+# TODO: Have this in a ranger custom command
 # Combination of touch and mkdir
 #
 # $1: path to the new file
