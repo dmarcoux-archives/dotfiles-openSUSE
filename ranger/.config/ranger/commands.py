@@ -37,11 +37,11 @@ class toggle_flat(Command):
     """
 
     def execute(self):
+        self.fm.thisdir.unload()
+
         if self.fm.thisdir.flat == 0:
-            self.fm.thisdir.unload()
             self.fm.thisdir.flat = -1
-            self.fm.thisdir.load_content()
         else:
-            self.fm.thisdir.unload()
             self.fm.thisdir.flat = 0
-            self.fm.thisdir.load_content()
+
+        self.fm.thisdir.load_content()
