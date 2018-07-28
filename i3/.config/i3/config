@@ -148,9 +148,6 @@ exec hexchat
 # Launch email client
 exec thunderbird
 
-# Launch voice communication client
-exec mumble
-
 # Launch time+location-based color temperature adjuster for monitors
 exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
 
