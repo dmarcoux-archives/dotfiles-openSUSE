@@ -245,6 +245,11 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   (setq show-trailing-whitespace t)
 
+  ; Keybindings
+  (spacemacs/set-leader-keys
+    ; (SPC z x) - Disable keybinding for scale-font-transient-state (use SPC z f instead)
+    "zx" nil)
+
   ; Keybindings - Major mode - Ruby (SPC m)
   (spacemacs/set-leader-keys-for-major-mode 'enh-ruby-mode
     ; (SPC m x h) Toggle toggle ruby hash syntax between classic and 1.9 styles
