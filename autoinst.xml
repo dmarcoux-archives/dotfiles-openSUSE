@@ -20,23 +20,22 @@
       <package>xfce4-settings</package>
       <package>xfce4-session</package>
       <package>xfce4-screenshooter</package>
+      <package>xfce4-power-manager</package>
       <package>xf86-video-intel</package>
       <package>xdpyinfo</package>
       <package>xdotool</package>
-      <package>xclip</package>
       <package>xcape</package>
       <package>xbacklight</package>
+      <package>x11vnc</package>
       <package>wpa_supplicant</package>
       <package>vlc-codec-gstreamer</package>
       <package>vlc</package>
-      <package>vim-data</package>
-      <package>vim</package>
       <package>viewnior</package>
       <package>units</package>
       <package>unclutter</package>
-      <package>udiskie-lang</package>
       <package>udiskie</package>
       <package>tumbleweed-cli</package>
+      <package>tigervnc</package>
       <package>the_silver_searcher</package>
       <package>termite</package>
       <package>stow</package>
@@ -44,7 +43,6 @@
       <package>spec-cleaner</package>
       <package>snapper</package>
       <package>simple-scan</package>
-      <package>signal-desktop</package>
       <package>shim</package>
       <package>ruby-build</package>
       <package>rpm</package>
@@ -54,42 +52,42 @@
       <package>redshift-gtk</package>
       <package>ranger</package>
       <package>python3-py2pack</package>
+      <package>python3-pdd</package>
       <package>python3-keyring</package>
       <package>python3-docker-compose</package>
-      <package>pyenv</package>
+      <package>python2-py2pack</package>
       <package>pwgen</package>
       <package>pulseaudio</package>
       <package>pnmixer-git</package>
       <package>pinentry-gtk2</package>
+      <package>pidgin</package>
       <package>perl-File-MimeInfo</package>
       <package>perl-File-DesktopEntry</package>
       <package>pdftk</package>
       <package>pavucontrol</package>
       <package>password-store</package>
       <package>pass-otp</package>
+      <package>p11-kit-nss-trust</package>
       <package>osc</package>
       <package>openvpn</package>
+      <package>openresolv</package>
       <package>openSUSE-release</package>
       <package>openSUSE-Addon-NonOss-release</package>
       <package>numactl</package>
       <package>mupdf</package>
+      <package>mumble</package>
       <package>mokutil</package>
       <package>lightdm</package>
       <package>light-locker</package>
       <package>libvidstab1_1</package>
-      <package>libswresample2</package>
       <package>libreoffice-writer</package>
       <package>libgnomesu</package>
-      <package>libavutil55</package>
-      <package>libavformat57</package>
       <package>libavformat56</package>
       <package>libavdevice57</package>
       <package>libavdevice56</package>
-      <package>libavcodec57</package>
       <package>libavcodec56</package>
       <package>kexec-tools</package>
       <package>jq</package>
-      <package>iw</package>
       <package>irqbalance</package>
       <package>imagewriter</package>
       <package>i3</package>
@@ -109,32 +107,28 @@
       <package>fuse-exfat</package>
       <package>fontawesome-fonts</package>
       <package>firewall-config</package>
-      <package>ffmpeg</package>
       <package>exfat-utils</package>
       <package>emacs-x11</package>
-      <package>efibootmgr</package>
       <package>e2fsprogs</package>
       <package>dosfstools</package>
       <package>docker</package>
       <package>dbeaver</package>
       <package>cups-backends</package>
       <package>ctags</package>
-      <package>cmus-plugin-pulse</package>
-      <package>cmus-plugin-ffmpeg</package>
-      <package>cmus</package>
       <package>clipmenu</package>
+      <package>chrony</package>
       <package>chromium</package>
-      <package>build</package>
       <package>btrfsprogs</package>
+      <package>biosdevname</package>
       <package>beets</package>
       <package>autoyast2</package>
       <package>asciinema</package>
       <package>alsa-firmware</package>
       <package>ShellCheck</package>
       <package>NetworkManager-openvpn</package>
+      <package>MozillaThunderbird</package>
       <package>MozillaFirefox</package>
       <package>Mesa-dri-32bit</package>
-      <package>Mesa-dri</package>
     </packages>
     <patterns config:type="list">
       <pattern>apparmor</pattern>
@@ -146,7 +140,6 @@
       <pattern>fonts_opt</pattern>
       <pattern>laptop</pattern>
       <pattern>minimal_base</pattern>
-      <pattern>multimedia_opt</pattern>
       <pattern>sw_management</pattern>
       <pattern>x11</pattern>
       <pattern>x11_opt</pattern>
@@ -157,15 +150,16 @@
       <product>openSUSE</product>
     </products>
     <remove-packages config:type="list">
-      <package>xscreensaver</package>
       <package>xfwm4</package>
       <package>xfdesktop</package>
       <package>xfce4-panel</package>
       <package>thunar</package>
       <package>icedtea-web</package>
-      <package>ibus</package>
       <package>i3lock</package>
       <package>highlight</package>
+      <package>ibus</package>
+      <package>xscreensaver</package>
+      <package>Mesa-dri-nouveau</package>
     </remove-packages>
   </software>
 </profile>
