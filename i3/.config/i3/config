@@ -93,11 +93,6 @@ bar {
 
 exec_always --no-startup-id ~/dotfiles/scripts/set_keyboard_layout.sh
 
-exec_always --no-startup-id ~/dotfiles/scripts/set_xrandr_dpi.sh
-
-# Set monitors' configuration
-exec_always --no-startup-id ~/dotfiles/scripts/set_xrandr_both.sh
-
 # Disable touchpad and trackpoint on the first run
 exec --no-startup-id ~/dotfiles/scripts/toggle_touchpad_trackpoint.sh
 
