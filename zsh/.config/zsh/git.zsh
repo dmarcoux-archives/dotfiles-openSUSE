@@ -119,11 +119,17 @@ if type hub > /dev/null 2>&1; then
 
   # Update fork of a Git repository (it has to be setup with fork_repo to follow the remote naming convention)
   update_fork() {
-    # Rebase master on the upstream changes
-    git pull --rebase --autostash upstream master
+    # Get the default branch (it's not always 'master'... there are other cases like 'gh-pages' for GitHub pages for example)
+    DEFAULT_BRANCH="$(git symbolic-ref refs/remotes/upstream/HEAD | sed 's\^refs/remotes/upstream/\\')"
 
-    # Push updated master to my fork
-    git push origin master
+    # Checkout the default branch
+    git checkout "$DEFAULT_BRANCH"
+
+    # Rebase the default branch on the upstream changes
+    git pull --rebase --autostash upstream "$DEFAULT_BRANCH"
+
+    # Push updated default branch to my fork
+    git push origin "$DEFAULT_BRANCH"
 
     git submodule update
   }
