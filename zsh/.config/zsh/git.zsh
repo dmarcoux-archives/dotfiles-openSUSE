@@ -133,4 +133,23 @@ if type hub > /dev/null 2>&1; then
 
     git submodule update
   }
+
+  # Checkout branch of someone else's fork
+  checkout_fork() {
+    USER="$(echo "$1" | cut --delimiter=':' --fields=1)"
+    BRANCH="$(echo "$1" | cut --delimiter=':' --fields=2)"
+    REMOTE="$(git config remote.origin.url | sed -e "s|:.*/|:$USER/|g")"
+
+    # Add a remote for the fork
+    git remote add "$USER" "$REMOTE"
+
+    # Fetch branches of the fork
+    git fetch "$USER"
+
+    # Checkout the fork's branch
+    git checkout "$USER"/"$BRANCH"
+
+    # Create a local copy of the fork's branch
+    git checkout -b "$BRANCH"
+  }
 fi
