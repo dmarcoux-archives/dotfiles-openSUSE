@@ -21,6 +21,10 @@ if type osc > /dev/null 2>&1; then
   # Check out content from the repository
   ealias oco='osc checkout'
 
+  # Copy a package from a project to another
+  ealias ocp='osc copypac'
+  # TODO: Snippet to copy a package to my local OBS instance 'osc --apiurl=http://localhost:3000 copypac openSUSE.org:home:REMOTE_OBS_USER REMOTE_PACKAGE home:LOCAL_OBS_USER' (this depends on the interconnect)
+
   # Generates a diff, comparing local changes against the repository server
   ealias odi='osc diff'
 
