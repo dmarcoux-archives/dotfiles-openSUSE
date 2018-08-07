@@ -135,6 +135,7 @@ if type hub > /dev/null 2>&1; then
   }
 
   # Checkout branch of someone else's fork
+  # Example: checkout_fork dmarcoux:branch_123
   checkout_fork() {
     USER="$(echo "$1" | cut --delimiter=':' --fields=1)"
     BRANCH="$(echo "$1" | cut --delimiter=':' --fields=2)"
