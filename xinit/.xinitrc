@@ -188,6 +188,12 @@ if type pass > /dev/null; then
   export PASSWORD_STORE_GENERATED_LENGTH=30
 fi
 
+# If weechat is installed
+if type weechat > /dev/null; then
+  # Do not pollute the home directory
+  export WEECHAT_HOME="$XDG_CONFIG_HOME/weechat"
+fi
+
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 
