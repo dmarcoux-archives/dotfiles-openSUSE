@@ -28,6 +28,7 @@ vim/.vim/.netrwhist
 vim/.vim/plugged/
 
 weechat/.config/weechat/logs/
+weechat/.config/weechat/sec.conf
 weechat/.config/weechat/weechat.log
 
 xfce/.config/xfce4/xfce4-screenshooter
