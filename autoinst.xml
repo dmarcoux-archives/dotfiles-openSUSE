@@ -8,6 +8,7 @@
     <packages config:type="list">
       <package>zsh</package>
       <package>zip</package>
+      <package>zeal</package>
       <package>zbar</package>
       <package>youtube-dl</package>
       <package>yast2-sound</package>
@@ -17,6 +18,7 @@
       <package>xsel</package>
       <package>xournal</package>
       <package>xfsprogs</package>
+      <package>xfce4-terminal</package>
       <package>xfce4-settings</package>
       <package>xfce4-session</package>
       <package>xfce4-screenshooter</package>
@@ -28,6 +30,7 @@
       <package>xbacklight</package>
       <package>x11vnc</package>
       <package>wpa_supplicant</package>
+      <package>weechat</package>
       <package>vlc-codec-gstreamer</package>
       <package>vlc</package>
       <package>viewnior</package>
@@ -35,9 +38,9 @@
       <package>unclutter</package>
       <package>udiskie</package>
       <package>tumbleweed-cli</package>
+      <package>tmate</package>
       <package>tigervnc</package>
       <package>the_silver_searcher</package>
-      <package>termite</package>
       <package>stow</package>
       <package>splix</package>
       <package>spec-cleaner</package>
@@ -118,6 +121,7 @@
       <package>clipmenu</package>
       <package>chrony</package>
       <package>chromium</package>
+      <package>capnet-assist</package>
       <package>btrfsprogs</package>
       <package>biosdevname</package>
       <package>beets</package>
@@ -150,15 +154,15 @@
       <product>openSUSE</product>
     </products>
     <remove-packages config:type="list">
+      <package>xscreensaver</package>
       <package>xfwm4</package>
       <package>xfdesktop</package>
       <package>xfce4-panel</package>
       <package>thunar</package>
       <package>icedtea-web</package>
+      <package>ibus</package>
       <package>i3lock</package>
       <package>highlight</package>
-      <package>ibus</package>
-      <package>xscreensaver</package>
       <package>Mesa-dri-nouveau</package>
     </remove-packages>
   </software>
