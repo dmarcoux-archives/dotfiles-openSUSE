@@ -53,7 +53,5 @@ behind them!
   dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
 - [zsh](https://github.com/xero/dotfiles) and [GNU Stow
   usage](https://github.com/xero/dotfiles/issues/6)
-- [Solarized theme for
-  termite](https://github.com/alpha-omega/termite-colors-solarized)
 - [set_xrandr_both.sh](https://github.com/j-san/i3-config/blob/master/configure-xrandr.sh)
 - [.Xresources](https://www.reddit.com/r/archlinux/comments/40w3ld/why_is_font_rendering_so_crap_by_default/cyxlida)
