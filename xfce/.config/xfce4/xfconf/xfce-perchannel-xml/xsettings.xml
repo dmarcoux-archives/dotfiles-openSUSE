@@ -17,6 +17,7 @@
     <property name="DecorationLayout" type="string" value="menu:minimize,maximize,close"/>
     <property name="FontName" type="string" value="DejaVu Sans 12"/>
     <property name="MonospaceFontName" type="string" value="DejaVu Sans Mono 12"/>
+    <property name="CanChangeAccels" type="bool" value="true"/>
   </property>
   <property name="Xfce" type="empty">
     <property name="LastCustomDPI" type="int" value="95"/>
