@@ -37,6 +37,7 @@ ealias grebc='git rebase --continue'
 # From the output of the glo alias, select with fzf the commit hash to rebase on
 # TODO: Improve this to use xargs. It's not possible right now as xargs on Linux doesn't support -o, which prevent Vim from complaining about the input
 alias grebi='git rebase --interactive $(glo | fzf --ansi --no-sort | cut --delimiter=" " --fields=1)'
+ealias gref='git reflog' # then: git reset HEAD@{index}
 ealias gres='git reset'
 ealias grev='git revert'
 # Select a commit with fzf and revert it
