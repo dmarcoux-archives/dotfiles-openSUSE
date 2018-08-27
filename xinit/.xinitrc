@@ -128,11 +128,14 @@ export PATH=$PATH:~/dotfiles/scripts:~/.local/bin
 
 # If fzf is installed
 if type fzf > /dev/null; then
-  # Default command to use when input is tty
-  export FZF_DEFAULT_COMMAND='\ag --hidden -g ""'
+  # Default command to use when input is tty (using the default 'fd' command)
+  export FZF_DEFAULT_COMMAND='command fd --hidden --type file --exclude .git'
 
   # Default command for the CTRL+T key binding
-  export FZF_CTRL_T_COMMAND='\ag --hidden -g ""'
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+  # Default command for the ALT+C key binding (using the default 'fd' command)
+  export FZF_ALT_C_COMMAND='command fd --hidden --type directory --exclude .git'
 
   # Default colors, Solarized (Light)
   _fzf_default_colors() {
