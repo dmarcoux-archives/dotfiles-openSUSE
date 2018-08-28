@@ -263,6 +263,12 @@ before packages are loaded. If you are unsure, you should try in setting them in
     ; (SPC z x) - Disable keybinding for scale-font-transient-state (use SPC z f instead)
     "zx" nil)
 
+  ; Keybindings - Ex Commands (:)
+  ; :W - Write (same as :w, I often mistype it)
+  (evil-ex-define-cmd "W" 'evil-write)
+  ; :Q - Quit (same as :q, I often mistype it)
+  (evil-ex-define-cmd "Q" 'evil-quit)
+
   ; Keybindings - Major mode - Ruby (SPC m)
   (spacemacs/set-leader-keys-for-major-mode 'enh-ruby-mode
     ; (SPC m x h) Toggle toggle ruby hash syntax between classic and 1.9 styles
