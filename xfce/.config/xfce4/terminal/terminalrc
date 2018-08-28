@@ -35,4 +35,5 @@ FontUseSystem=TRUE
 ScrollingLines=50000
 ColorBoldUseDefault=FALSE
 TitleMode=TERMINAL_TITLE_REPLACE
+ShortcutsNoMnemonics=TRUE
 
