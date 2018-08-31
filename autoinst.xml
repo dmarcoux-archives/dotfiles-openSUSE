@@ -92,6 +92,7 @@
       <package>kexec-tools</package>
       <package>jq</package>
       <package>irqbalance</package>
+      <package>inwee</package>
       <package>imagewriter</package>
       <package>i3</package>
       <package>hub</package>
@@ -110,6 +111,7 @@
       <package>fuse-exfat</package>
       <package>fontawesome-fonts</package>
       <package>firewall-config</package>
+      <package>fd</package>
       <package>exfat-utils</package>
       <package>emacs-x11</package>
       <package>e2fsprogs</package>
@@ -125,6 +127,7 @@
       <package>btrfsprogs</package>
       <package>biosdevname</package>
       <package>beets</package>
+      <package>bat</package>
       <package>autoyast2</package>
       <package>asciinema</package>
       <package>alsa-firmware</package>
