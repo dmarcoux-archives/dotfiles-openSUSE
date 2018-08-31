@@ -1,0 +1,13 @@
+/mouse enable
+
+##### Network
+# Default settings
+/set irc.server_default.nicks dmarcoux
+/set irc.server_default.ssl_verify off
+/set irc.server_default.capabilities "account-notify,away-notify,cap-notify,multi-prefix,server-time,znc.in/self-message"
+
+# Freenode
+/server add freenode znc.dmarcoux.de/6697 -ssl -autoconnect
+/set irc.server.freenode.password dmarcoux/freenode:${sec.data.znc_password}
+
+/connect -all
