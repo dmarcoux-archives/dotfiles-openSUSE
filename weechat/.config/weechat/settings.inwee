@@ -1,3 +1,7 @@
+##### Scripts
+
+/script install colorize_nicks.py
+
 /mouse enable
 
 # Keep join/part/quit only from users who wrote in the last 5 minutes
