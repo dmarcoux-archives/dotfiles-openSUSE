@@ -13,6 +13,11 @@ if type weechat > /dev/null 2>&1; then
     }
 
     configure_weechat() {
+      if [ ! -e "$WEECHAT_HOME"/weechat_fifo ]; then
+        echo "Launch weechat before configuring it"
+        return
+      fi
+
       # Settings which need to be expanded before being passed to inwee
       echo "/secure set freenode_password "$(pass pass/me/freenode.net=dmarcoux)"" | inwee
       echo "/secure set znc_password "$(pass pass/me/znc=dmarcoux)"" | inwee
