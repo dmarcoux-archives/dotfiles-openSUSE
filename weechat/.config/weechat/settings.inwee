@@ -1,5 +1,10 @@
 /mouse enable
 
+# Keep join/part/quit only from users who wrote in the last 5 minutes
+/set irc.look.smart_filter on
+/filter add irc_smart * irc_smart_filter *
+/set irc.look.smart_filter_delay 5
+
 ##### Network
 # Default settings
 /set irc.server_default.nicks dmarcoux
