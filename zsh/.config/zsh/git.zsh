@@ -54,7 +54,7 @@ ealias gsu='git submodule update'
 add_repo() {
   if [ -z "$1" ] || [ -z "$2" ]; then
     # Display usage
-    echo "Usage: add_repo git@github.com:example/source_repo.git git@github.com:example/destination_repo.git"
+    echo "Usage: ${funcstack[1]} git@github.com:example/source_repo.git git@github.com:example/destination_repo.git"
     return
   fi
 
@@ -92,7 +92,7 @@ if type hub > /dev/null 2>&1; then
   fork_repo() {
     if [ -z "$1" ]; then
       # Display usage
-      echo "Usage: fork_repo git@github.com:username/repo.git"
+      echo "Usage: ${funcstack[1]} git@github.com:username/repo.git"
       return
     fi
 
@@ -136,8 +136,13 @@ if type hub > /dev/null 2>&1; then
   }
 
   # Checkout branch of someone else's fork
-  # Example: checkout_fork dmarcoux:branch_123
   checkout_fork() {
+    if [ -z "$1" ]; then
+      # Display usage
+      echo "Usage: ${funcstack[1]} username:branch"
+      return
+    fi
+
     USER="$(echo "$1" | cut --delimiter=':' --fields=1)"
     BRANCH="$(echo "$1" | cut --delimiter=':' --fields=2)"
     REMOTE="$(git config remote.origin.url | sed -e "s|:.*/|:$USER/|g")"
