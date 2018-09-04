@@ -2,6 +2,8 @@
 
 /script install colorize_nicks.py
 
+##### Interface
+
 /mouse enable
 
 # Keep join/part/quit only from users who wrote in the last 5 minutes
@@ -10,6 +12,7 @@
 /set irc.look.smart_filter_delay 5
 
 ##### Network
+
 # Default settings
 /set irc.server_default.nicks dmarcoux
 /set irc.server_default.ssl_verify off
