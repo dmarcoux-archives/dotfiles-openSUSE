@@ -9,7 +9,7 @@ if type weechat > /dev/null 2>&1; then
   if type inwee > /dev/null 2>&1; then
     # Set default options for inwee
     inwee() {
-      command inwee --fifo "$WEECHAT_HOME"/weechat_fifo
+      command inwee --fifo "$WEECHAT_HOME"/weechat_fifo "$@"
     }
 
     configure_weechat() {
