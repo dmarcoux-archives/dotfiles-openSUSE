@@ -11,6 +11,10 @@
 /filter add irc_smart * irc_smart_filter *
 /set irc.look.smart_filter_delay 5
 
+# Colors
+/set weechat.bar.status.color_bg 7
+/set weechat.bar.title.color_bg 7
+
 ##### Network
 
 # Default settings
