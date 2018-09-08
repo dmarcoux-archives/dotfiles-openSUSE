@@ -108,7 +108,7 @@ exec --no-startup-id ~/dotfiles/scripts/toggle_touchpad_trackpoint.sh
 #   4. Get value of 'WM_CLASS(STRING)' from xprop's output
 assign [class="^Firefox"] → $WS2
 
-assign [class="^Hexchat$"] → $WS3
+assign [title="^Weechat$"] → $WS3
 assign [class="^Pidgin$"] → $WS3
 assign [class="^Mumble$"] → $WS3
 
@@ -138,7 +138,7 @@ exec xfce4-terminal
 exec $BROWSER
 
 # Launch IRC client
-exec hexchat
+exec xfce4-terminal --command='zsh -ic "weechat"' --title=Weechat
 
 # Launch email client
 exec thunderbird
