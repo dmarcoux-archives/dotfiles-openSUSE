@@ -97,8 +97,6 @@
       <package>i3</package>
       <package>hub</package>
       <package>hplip</package>
-      <package>hexchat-plugins-python3</package>
-      <package>hexchat</package>
       <package>gvim</package>
       <package>gutenprint</package>
       <package>grub2-x86_64-efi</package>
