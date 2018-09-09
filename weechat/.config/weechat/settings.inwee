@@ -6,10 +6,21 @@
 
 /mouse enable
 
+# Delete all filters (so they can be recreated)
+/filter del -all
+
 # Keep join/part/quit only from users who wrote in the last 5 minutes
 /set irc.look.smart_filter on
 /filter add irc_smart * irc_smart_filter *
 /set irc.look.smart_filter_delay 5
+
+# Hide messages from channels
+# - irc_324: channel modes
+# - irc_329: channel creation date
+# - irc_332: topic of channel
+# - irc_333: infos about topic of channel
+# - irc_366: end of /names
+/filter add channel_messages * irc_324,irc_329,irc_332,irc_333,irc_366 *
 
 # Colors
 /set weechat.bar.status.color_bg 7
