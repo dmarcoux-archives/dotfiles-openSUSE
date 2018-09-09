@@ -129,7 +129,7 @@ export PATH=$PATH:~/dotfiles/scripts:~/.local/bin
 # If fzf is installed
 if type fzf > /dev/null; then
   # Default command to use when input is tty (using the default 'fd' command)
-  export FZF_DEFAULT_COMMAND='command fd --hidden --type file --exclude .git'
+  export FZF_DEFAULT_COMMAND='command fd --hidden --type file --no-ignore-vcs --exclude .git'
 
   # Default command for the CTRL+T key binding
   export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
