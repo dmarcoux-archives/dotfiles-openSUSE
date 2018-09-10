@@ -46,3 +46,11 @@
 /set irc.server.freenode.password dmarcoux/freenode:${sec.data.znc_password}
 
 /connect -all
+
+##### Key Bindings
+
+# Toggle nicklist with meta-n
+/key bind meta-n /bar toggle nicklist
+
+# Switch to a buffer with ctrl-t
+/key bind ctrl-T /go
