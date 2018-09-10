@@ -2,6 +2,9 @@
 
 /mouse enable
 
+# Set list of channels at the top
+/bar set buflist position top
+
 # Delete all filters (so they can be recreated)
 /filter del -all
 
