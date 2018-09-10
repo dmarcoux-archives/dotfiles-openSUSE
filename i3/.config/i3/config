@@ -138,7 +138,7 @@ exec xfce4-terminal
 exec $BROWSER
 
 # Launch IRC client
-exec xfce4-terminal --command='zsh -ic "weechat"' --title=Weechat
+exec xfce4-terminal --command='zsh -ic "weechat"' --title=Weechat --hide-menubar
 
 # Launch email client
 exec thunderbird
