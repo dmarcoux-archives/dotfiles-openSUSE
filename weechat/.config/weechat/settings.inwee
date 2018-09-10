@@ -18,6 +18,9 @@
 # - irc_366: end of /names
 /filter add channel_messages * irc_324,irc_329,irc_332,irc_333,irc_366 *
 
+# Join/Part/Quit messages don't count as activity in a channel
+/set weechat.look.buffer_notify_default message
+
 # Colors
 /set weechat.bar.status.color_bg 7
 /set weechat.bar.title.color_bg 7
