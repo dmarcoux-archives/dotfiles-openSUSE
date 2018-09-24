@@ -161,6 +161,9 @@ exec --no-startup-id unclutter
 # Launch screen locker
 exec --no-startup-id light-locker
 
+# Launch screenshot software
+exec --no-startup-id flameshot
+
 #################
 # Key bindings
 #################
