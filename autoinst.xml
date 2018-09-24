@@ -6,36 +6,26 @@
     <install_recommended config:type="boolean">true</install_recommended>
     <instsource/>
     <packages config:type="list">
+      <package>pdftk</package>
+      <package>xcape</package>
+      <package>ruby-build</package>
+      <package>rofi-dmenu</package>
+      <package>pnmixer-git</package>
+      <package>inwee</package>
       <package>zsh</package>
-      <package>zip</package>
       <package>zeal</package>
-      <package>zbar</package>
       <package>youtube-dl</package>
       <package>yast2-sound</package>
-      <package>yast2-schema</package>
       <package>yast2-alternatives</package>
-      <package>yank</package>
-      <package>xsel</package>
-      <package>xournal</package>
-      <package>xfsprogs</package>
+      <package>zip</package>
       <package>xfce4-terminal</package>
       <package>xfce4-settings</package>
-      <package>xfce4-session</package>
-      <package>xfce4-screenshooter</package>
       <package>xfce4-power-manager</package>
-      <package>xf86-video-intel</package>
-      <package>xdpyinfo</package>
       <package>xdotool</package>
-      <package>xcape</package>
       <package>xbacklight</package>
-      <package>x11vnc</package>
       <package>wpa_supplicant</package>
-      <package>weechat</package>
-      <package>vlc-codec-gstreamer</package>
-      <package>vlc</package>
       <package>viewnior</package>
       <package>units</package>
-      <package>unclutter</package>
       <package>udiskie</package>
       <package>tumbleweed-cli</package>
       <package>tmate</package>
@@ -43,43 +33,47 @@
       <package>the_silver_searcher</package>
       <package>stow</package>
       <package>splix</package>
-      <package>spec-cleaner</package>
-      <package>snapper</package>
-      <package>simple-scan</package>
-      <package>shim</package>
-      <package>ruby-build</package>
-      <package>rpm</package>
-      <package>rofi-dmenu</package>
+      <package>xfsprogs</package>
       <package>rofi</package>
       <package>remind</package>
       <package>redshift-gtk</package>
-      <package>ranger</package>
-      <package>python3-py2pack</package>
-      <package>python3-pdd</package>
       <package>python3-keyring</package>
-      <package>python3-docker-compose</package>
-      <package>python2-py2pack</package>
+      <package>git-lfs</package>
+      <package>dbeaver</package>
+      <package>clipmenu</package>
+      <package>zbar</package>
+      <package>yast2-schema</package>
+      <package>python3-pdd</package>
       <package>pwgen</package>
-      <package>pulseaudio</package>
-      <package>pnmixer-git</package>
-      <package>pinentry-gtk2</package>
+      <package>fzf</package>
+      <package>xfce4-session</package>
       <package>pidgin</package>
+      <package>weechat</package>
+      <package>vlc</package>
+      <package>snapper</package>
       <package>perl-File-MimeInfo</package>
       <package>perl-File-DesktopEntry</package>
-      <package>pdftk</package>
+      <package>pulseaudio</package>
+      <package>rpm</package>
+      <package>yank</package>
       <package>pavucontrol</package>
       <package>password-store</package>
       <package>pass-otp</package>
-      <package>p11-kit-nss-trust</package>
+      <package>xsel</package>
       <package>osc</package>
       <package>openvpn</package>
       <package>openresolv</package>
+      <package>xdpyinfo</package>
       <package>openSUSE-release</package>
-      <package>openSUSE-Addon-NonOss-release</package>
-      <package>numactl</package>
+      <package>unclutter</package>
+      <package>simple-scan</package>
+      <package>spec-cleaner</package>
+      <package>shim</package>
       <package>mupdf</package>
       <package>mumble</package>
+      <package>ranger</package>
       <package>mokutil</package>
+      <package>python3-docker-compose</package>
       <package>lightdm</package>
       <package>light-locker</package>
       <package>libvidstab1_1</package>
@@ -89,43 +83,48 @@
       <package>libavdevice57</package>
       <package>libavdevice56</package>
       <package>libavcodec56</package>
+      <package>bat</package>
       <package>kexec-tools</package>
       <package>jq</package>
       <package>irqbalance</package>
-      <package>inwee</package>
       <package>imagewriter</package>
       <package>i3</package>
       <package>hub</package>
+      <package>xournal</package>
       <package>hplip</package>
+      <package>xf86-video-intel</package>
+      <package>x11vnc</package>
       <package>gvim</package>
       <package>gutenprint</package>
       <package>grub2-x86_64-efi</package>
       <package>gnome-calculator</package>
       <package>glibc</package>
-      <package>git-lfs</package>
       <package>git-core</package>
-      <package>fzf</package>
       <package>fwts</package>
       <package>fuse-exfat</package>
+      <package>numactl</package>
+      <package>vlc-codec-gstreamer</package>
       <package>fontawesome-fonts</package>
+      <package>flameshot</package>
       <package>firewall-config</package>
       <package>fd</package>
       <package>exfat-utils</package>
       <package>emacs-x11</package>
       <package>e2fsprogs</package>
+      <package>python3-py2pack</package>
       <package>dosfstools</package>
+      <package>python2-py2pack</package>
       <package>docker</package>
-      <package>dbeaver</package>
+      <package>pinentry-gtk2</package>
       <package>cups-backends</package>
       <package>ctags</package>
-      <package>clipmenu</package>
+      <package>p11-kit-nss-trust</package>
       <package>chrony</package>
       <package>chromium</package>
       <package>capnet-assist</package>
       <package>btrfsprogs</package>
       <package>biosdevname</package>
       <package>beets</package>
-      <package>bat</package>
       <package>autoyast2</package>
       <package>asciinema</package>
       <package>alsa-firmware</package>
@@ -134,6 +133,7 @@
       <package>MozillaThunderbird</package>
       <package>MozillaFirefox</package>
       <package>Mesa-dri-32bit</package>
+      <package>openSUSE-Addon-NonOss-release</package>
     </packages>
     <patterns config:type="list">
       <pattern>apparmor</pattern>
