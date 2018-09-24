@@ -50,6 +50,9 @@ if type osc > /dev/null 2>&1; then
   # Show reason why a package got triggered to build
   ealias otr='osc triggerreason'
 
+  # Update a working copy (project or package)
+  ealias oup='osc update'
+
   # Edit the changes file
   ealias ovc='osc vc'
 fi
