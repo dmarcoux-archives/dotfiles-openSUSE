@@ -1,5 +1,11 @@
 # If osc is installed, set it up
 if type osc > /dev/null 2>&1; then
+  # Internal OBS instance
+  alias iosc='osc --apiurl=iosc'
+
+  # Development OBS instance
+  alias dosc='osc --apiurl=dosc'
+
   # Mark file(s) to be added upon next commit
   ealias oa='osc add'
 
