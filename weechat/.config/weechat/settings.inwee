@@ -1,6 +1,6 @@
 ##### Scripts
 
-/script install go.py
+/script install go.py urlserver.py
 
 ##### Interface
 
