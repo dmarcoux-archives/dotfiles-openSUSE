@@ -144,7 +144,7 @@ exec xfce4-terminal --command='zsh -ic "weechat"' --title=Weechat --hide-menubar
 exec thunderbird
 
 # Launch time+location-based color temperature adjuster for monitors
-exec --no-startup-id redshift-gtk -c ~/.config/redshift/config
+exec --no-startup-id redshift-gtk
 
 # Launch network manager
 exec --no-startup-id nm-applet
