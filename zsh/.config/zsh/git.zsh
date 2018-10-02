@@ -47,6 +47,9 @@ ealias gsh='git show'
 alias gshf='glo | fzf --ansi --no-sort --preview "echo {} | cut --delimiter=\" \" --fields=1 | xargs git show" | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty git show'
 ealias gst='git status'
 ealias gsta='git stash'
+# Select a stash with fzf and show it
+ealias gstaf='git stash list | fzf --no-sort | sed -n "s/^stash@{\(.*\)}.*/\1/p" | xargs --no-run-if-empty git stash show'
+ealias gstal='git stash list'
 ealias gsu='git submodule update'
 
 # Add a Git repository (source) with its complete history to another one (destination). It doesn't overwrite the destination, the source's history is simply added
