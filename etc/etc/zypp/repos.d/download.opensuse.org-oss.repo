@@ -1,8 +1,0 @@
-[download.opensuse.org-oss]
-name=Main Repository (OSS) ($snapshotVersion)
-enabled=1
-autorefresh=1
-baseurl=http://download.tumbleweed.boombatower.com/$snapshotVersion/repo/oss/
-path=/
-type=rpm-md
-keeppackages=0

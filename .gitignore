@@ -7,9 +7,6 @@ etc/etc/openvpn/
 !etc/etc/openvpn/client/
 
 etc/etc/zypp/repos.d/*.repo
-!etc/etc/zypp/repos.d/download.opensuse.org-non-oss.repo
-!etc/etc/zypp/repos.d/download.opensuse.org-oss.repo
-!etc/etc/zypp/repos.d/download.opensuse.org-tumbleweed.repo
 !etc/etc/zypp/repos.d/home:dmarcoux.repo
 !etc/etc/zypp/repos.d/packman.inode.at-openSUSE_Tumbleweed.repo
 
