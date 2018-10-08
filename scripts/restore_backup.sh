@@ -9,15 +9,23 @@ set -eux
 BACKUP_DIR="$HOME/dotfiles/backup/$HOSTNAME/keys"
 
 echo 'Setup spacemacs'
+# Only if needed (so it doesn't contain the .git directory, which means it was already done)
 # - Remove emacs files
 # - Install spacemacs
 # - Install spacemacs' layers (only needed the first time)
-rm -rf ~/.emacs.d
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-emacs
+if [ ! -d ~/.emacs.d/.git ]; then
+  rm -rf ~/.emacs.d
+  git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  stow spacemacs
+  emacs
+fi
 
 echo "Install vim's plugin"
-vim +PlugInstall +qall
+# Only if needed (so it doesn't contain the plugged directory, which means it was already done)
+if [ ! -d ~/.vim/plugged ]; then
+  stow vim
+  vim +PlugInstall +qall
+fi
 
 # Set login shell
 echo "Enter your user's password (not root)"
@@ -27,7 +35,7 @@ echo 'Add user to docker group'
 sudo gpasswd --add "$(whoami)" docker
 
 echo 'Enable docker service'
-systemctl enable --now docker
+systemctl is-active docker >/dev/null 2>&1 || systemctl enable --now docker
 
 echo 'Restore GPG and SSH keys?'
 select choice in "Yes" "No"; do
@@ -60,6 +68,8 @@ select choice in "Yes" "No"; do
           gpg --import-ownertrust "$BACKUP_DIR/otrust.txt"
 
           echo 'Restoring SSH keys'
+          mkdir --parents ~/.ssh
+          chmod 700 ~/.ssh
           cp "$BACKUP_DIR"/*id_rsa* ~/.ssh/
 
           echo 'Removing exported GPG/SSH keys and the unencrypted tar archive'
