@@ -17,7 +17,7 @@ if [ ! -d ~/.emacs.d/.git ]; then
   rm -rf ~/.emacs.d
   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
   stow spacemacs
-  emacs
+  command emacs
 fi
 
 echo "Install vim's plugin"
