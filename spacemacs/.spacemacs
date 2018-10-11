@@ -33,7 +33,8 @@
      sql
      syntax-checking
      yaml
-     typescript
+     (typescript :variables
+                 typescript-indent-level 2)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
