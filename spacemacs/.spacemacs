@@ -296,7 +296,10 @@ before packages are loaded. If you are unsure, you should try in setting them in
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode nil)
- '(enh-ruby-use-encoding-map t)
+ '(enh-ruby-add-encoding-comment-on-save nil)
+ '(enh-ruby-deep-indent-paren nil)
+ '(enh-ruby-hanging-paren-deep-indent-level 2)
+ '(enh-ruby-use-encoding-map nil)
  '(evil-search-module (quote evil-search))
  '(evil-want-Y-yank-to-eol t)
  '(mode-require-final-newline t)
