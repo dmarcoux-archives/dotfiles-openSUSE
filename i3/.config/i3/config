@@ -74,8 +74,9 @@ bar {
     font pango:DejaVu Sans Mono 13
     strip_workspace_numbers yes
 
-    # Put the tray output on the primary screen
+    # The first available output will be used. It will be the primary output, otherwise the laptop's output.
     tray_output primary
+    tray_output eDP1
 
     colors {
         # Solarized (Light) colors
