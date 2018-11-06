@@ -150,8 +150,10 @@ if type hub > /dev/null 2>&1; then
     BRANCH="$(echo "$1" | cut --delimiter=':' --fields=2)"
     REMOTE="$(git config remote.origin.url | sed -e "s|:.*/|:$USER/|g")"
 
-    # Add a remote for the fork
-    git remote add "$USER" "$REMOTE"
+    # Add a remote for the fork (if one with the same name doesn't already exist)
+    if ! git remote get-url "$USER" > /dev/null 2>&1; then
+      git remote add "$USER" "$REMOTE"
+    fi
 
     # Fetch branches of the fork
     git fetch "$USER"
