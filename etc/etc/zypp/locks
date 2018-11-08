@@ -5,12 +5,6 @@ case_sensitive: on
 solvable_name: Mesa-dri-nouveau
 
 
-type: pattern
-match_type: exact
-case_sensitive: on
-solvable_name: games
-
-
 type: package
 match_type: exact
 case_sensitive: on
@@ -20,47 +14,5 @@ solvable_name: highlight
 type: package
 match_type: glob
 case_sensitive: on
-solvable_name: i3lock
-
-
-type: package
-match_type: glob
-case_sensitive: on
 solvable_name: ibus
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: icedtea-web
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: thunar
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: xfce4-panel
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: xfdesktop
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: xfwm4
-
-
-type: package
-match_type: glob
-case_sensitive: on
-solvable_name: xscreensaver
 
