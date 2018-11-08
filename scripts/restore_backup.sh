@@ -12,34 +12,42 @@ echo 'Setup npm'
 # TODO: Package n instead of executing this script directly
 curl -L https://git.io/n-install | bash
 
-echo 'Setup spacemacs'
-# Only if needed (so it doesn't contain the .git directory, which means it was already done)
-# - Remove emacs files
-# - Install spacemacs
-# - Install spacemacs' layers (only needed the first time)
-if [ ! -d ~/.emacs.d/.git ]; then
-  rm -rf ~/.emacs.d
-  git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-  stow spacemacs
-  command emacs
+if type emacs > /dev/null 2>&1; then
+  # Setup spacemacs if not already done (so it doesn't contain the .git directory)
+  # - Remove emacs files
+  # - Install spacemacs
+  # - Install spacemacs' layers (only needed the first time)
+  if [ ! -d ~/.emacs.d/.git ]; then
+    echo 'Setup spacemacs'
+    rm -rf ~/.emacs.d
+    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+    stow spacemacs
+    command emacs
+  fi
 fi
 
-echo "Install vim's plugin"
-# Only if needed (so it doesn't contain the plugged directory, which means it was already done)
-if [ ! -d ~/.vim/plugged ]; then
-  stow vim
-  vim +PlugInstall +qall
+if type vim > /dev/null 2>&1; then
+  echo "Install vim's plugin"
+  # Only if needed (so it doesn't contain the plugged directory, which means it was already done)
+  if [ ! -d ~/.vim/plugged ]; then
+    stow vim
+    vim +PlugInstall +qall
+  fi
 fi
 
-# Set login shell
-echo "Enter your user's password (not root)"
-chsh -s "$(command -v zsh)"
+if type zsh > /dev/null 2>&1; then
+  # Set login shell to zsh
+  echo "Enter your user's password (not root)"
+  chsh -s "$(command -v zsh)"
+fi
 
-echo 'Add user to docker group'
-sudo gpasswd --add "$(whoami)" docker
+if type docker > /dev/null 2>&1; then
+  echo 'Add user to docker group'
+  sudo gpasswd --add "$(whoami)" docker
 
-echo 'Enable docker service'
-systemctl is-active docker >/dev/null 2>&1 || systemctl enable --now docker
+  echo 'Enable docker service'
+  systemctl is-active docker >/dev/null 2>&1 || systemctl enable --now docker
+fi
 
 echo 'Restore GPG and SSH keys?'
 select choice in "Yes" "No"; do
