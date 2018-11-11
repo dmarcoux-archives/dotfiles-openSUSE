@@ -24,57 +24,6 @@ case "$WINDOWMANAGER" in
     *twm) xsetroot -solid darkslateblue
 esac
 
-#----- Custom lines from XFCE's config
-
-# fix broken $UID on some system...
-if test "x$UID" = "x"; then
-  if test -x /usr/xpg4/bin/id; then
-    UID=`/usr/xpg4/bin/id -u`;
-  else
-    UID=`id -u`;
-  fi
-fi
-
-# set $XDG_MENU_PREFIX to "xfce-" so that "xfce-applications.menu" is picked
-# over "applications.menu" in all Xfce applications.
-if test "x$XDG_MENU_PREFIX" = "x"; then
-  XDG_MENU_PREFIX="xfce-"
-  export XDG_MENU_PREFIX
-fi
-
-# set DESKTOP_SESSION and XDG_CURRENT_DESKTOP so that one can detect easily if
-# an Xfce session is running
-if test "x$DESKTOP_SESSION" = "x"; then
-  DESKTOP_SESSION="xfce"
-  export DESKTOP_SESSION
-fi
-if test "x$XDG_CURRENT_DESKTOP" = "x"; then
-  XDG_CURRENT_DESKTOP="XFCE"
-  export XDG_CURRENT_DESKTOP
-fi
-
-# set XDG_CURRENT_DESKTOP so that Qt 5 applications can identify user set Xfce theme
-if test "x$XDG_CURRENT_DESKTOP" = "x"; then
-  XDG_CURRENT_DESKTOP="XFCE"
-  export XDG_CURRENT_DESKTOP
-fi
-
-# Modify libglade and glade environment variables so that
-# it will find the files installed by Xfce
-GLADE_CATALOG_PATH="$GLADE_CATALOG_PATH:"
-GLADE_PIXMAP_PATH="$GLADE_PIXMAP_PATH:"
-GLADE_MODULE_PATH="$GLADE_MODULE_PATH:"
-export GLADE_CATALOG_PATH
-export GLADE_PIXMAP_PATH
-export GLADE_MODULE_PATH
-
-# if XAUTHLOCALHOSTNAME is not set in systemd user session, starting of xfce4-notifyd etc. will fail
-if systemctl --user list-jobs >/dev/null 2>&1; then # user session is running
-  dbus-update-activation-environment --systemd XAUTHLOCALHOSTNAME=$XAUTHLOCALHOSTNAME
-fi
-
-#----- End of custom lines from XFCE's config
-
 #----- Custom lines
 
 # Load .Xresources
@@ -199,8 +148,8 @@ fi
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 
-# Start XFCE session
-exec xfce4-session
+# Start KDE session
+exec startkde
 
 #----- End of custom lines
 
