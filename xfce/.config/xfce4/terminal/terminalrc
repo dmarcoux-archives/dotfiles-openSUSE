@@ -12,7 +12,7 @@ MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscDefaultGeometry=80x24
 MiscInheritGeometry=FALSE
-MiscMenubarDefault=TRUE
+MiscMenubarDefault=FALSE
 MiscMouseAutohide=FALSE
 MiscMouseWheelZoom=TRUE
 MiscToolbarDefault=FALSE
@@ -34,6 +34,6 @@ FontName=DejaVu Sans Mono 11
 FontUseSystem=TRUE
 ScrollingLines=50000
 ColorBoldUseDefault=FALSE
-TitleMode=TERMINAL_TITLE_REPLACE
 ShortcutsNoMnemonics=TRUE
+TitleMode=TERMINAL_TITLE_HIDE
 
