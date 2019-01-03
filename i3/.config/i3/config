@@ -137,7 +137,7 @@ exec --no-startup-id udiskie --tray
 exec --no-startup-id clipmenud
 
 # Launch terminal
-exec xfce4-terminal --title=Terminal
+exec xfce4-terminal --hide-menubar --title=Terminal
 
 # Launch web browser
 exec $BROWSER
@@ -180,7 +180,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+C exec --no-startup-id "light-locker-command --lock"
 
 # Start a terminal
-bindsym $mod+Return exec xfce4-terminal --title=Terminal
+bindsym $mod+Return exec xfce4-terminal --hide-menubar --title=Terminal
 
 # Kill the focused window
 bindsym $mod+Shift+Escape kill
