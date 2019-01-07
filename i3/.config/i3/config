@@ -122,6 +122,7 @@ assign [class="^Thunderbird$"] → $WS4
 
 assign [class="^Vlc$"] → $WS5
 assign [class="^Chromium-browser$"] → $WS5
+assign [class="^MellowPlayer$"] → $WS5
 
 # Kill potentially hung up audio server (it happens when a user logs out and back in)
 exec --no-startup-id killall pulseaudio
