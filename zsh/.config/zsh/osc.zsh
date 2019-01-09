@@ -1,9 +1,11 @@
 # If osc is installed, set it up
 if type osc > /dev/null 2>&1; then
-  # Internal OBS instance
-  alias iosc='osc --apiurl=iosc'
-
   # Development OBS instance
+  # This depends on having a 'dosc' alias in osc's config (~/config/osc/oscrc)
+  # [http://localhost:3000]
+  # aliases = dosc
+  # user = Admin
+  # pass = opensuse
   alias dosc='osc --apiurl=dosc'
 
   # Mark file(s) to be added upon next commit
