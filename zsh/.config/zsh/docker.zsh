@@ -17,6 +17,9 @@ if type docker > /dev/null 2>&1; then
     # Select Docker containers and stop them
     ealias dstopf='docker ps | fzf --header-lines=1 --multi | tr --squeeze-repeats " " | cut --delimiter=" " --fields=1 | xargs --no-run-if-empty docker stop'
 
+    # Select a Docker container and start shell in it
+    ealias dexecf='docker ps | fzf --header-lines=1 --multi | tr --squeeze-repeats " " | rev | cut --delimiter=" " --fields=1 | rev | xargs --no-run-if-empty -I % bash -c "</dev/tty docker exec --interactive --tty % bash --login"'
+
     # Select Docker images and remove them
     ealias drmif='docker image ls | fzf --header-lines=1 --multi | tr --squeeze-repeats " " | cut --delimiter=" " --fields=3 | xargs --no-run-if-empty docker rmi --force'
   fi
