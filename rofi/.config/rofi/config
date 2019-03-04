@@ -13,6 +13,9 @@ rofi.show-icons: true
 ! Sort entries by matches
 rofi.sort: true
 
+! Sort using fzf's strategy
+rofi.sorting-method: fzf
+
 ! Use fuzzy matching algorithm
 rofi.matching: fuzzy
 
