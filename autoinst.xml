@@ -6,134 +6,162 @@
     <install_recommended config:type="boolean">true</install_recommended>
     <instsource/>
     <packages config:type="list">
-      <package>pdftk</package>
-      <package>xcape</package>
-      <package>ruby-build</package>
-      <package>rofi-dmenu</package>
-      <package>pnmixer-git</package>
-      <package>inwee</package>
       <package>zsh</package>
-      <package>zeal</package>
+      <package>zip</package>
+      <package>zbar</package>
       <package>youtube-dl</package>
       <package>yast2-sound</package>
+      <package>yast2-schema</package>
       <package>yast2-alternatives</package>
-      <package>zip</package>
+      <package>yank</package>
+      <package>xsel</package>
+      <package>xournal</package>
+      <package>xinput</package>
+      <package>xfsprogs</package>
       <package>xfce4-terminal</package>
       <package>xfce4-settings</package>
+      <package>xfce4-session</package>
       <package>xfce4-power-manager</package>
+      <package>xf86-video-intel</package>
+      <package>xev</package>
+      <package>xdpyinfo</package>
       <package>xdotool</package>
+      <package>xcape</package>
       <package>xbacklight</package>
+      <package>x11vnc</package>
       <package>wpa_supplicant</package>
+      <package>wine-staging</package>
+      <package>whois</package>
+      <package>weechat</package>
+      <package>vlc-qt</package>
+      <package>vlc-noX</package>
+      <package>vlc-codec-gstreamer</package>
+      <package>vlc</package>
       <package>viewnior</package>
       <package>units</package>
+      <package>unclutter</package>
       <package>udiskie</package>
       <package>tumbleweed-cli</package>
       <package>tmate</package>
       <package>tigervnc</package>
       <package>the_silver_searcher</package>
       <package>stow</package>
+      <package>steam</package>
       <package>splix</package>
-      <package>xfsprogs</package>
+      <package>spec-cleaner</package>
+      <package>simplescreenrecorder</package>
+      <package>simple-scan</package>
+      <package>shim</package>
+      <package>rustup.rs</package>
+      <package>ruby-build</package>
+      <package>rpm</package>
+      <package>rofi-dmenu</package>
       <package>rofi</package>
       <package>remind</package>
       <package>redshift-gtk</package>
-      <package>python3-keyring</package>
-      <package>git-lfs</package>
-      <package>dbeaver</package>
-      <package>clipmenu</package>
-      <package>zbar</package>
-      <package>yast2-schema</package>
+      <package>ranger</package>
+      <package>python3-streamlink</package>
+      <package>python3-rust2rpm</package>
+      <package>python3-py2pack</package>
       <package>python3-pdd</package>
+      <package>python3-keyring</package>
+      <package>python3-docker-compose</package>
+      <package>python2-py2pack</package>
       <package>pwgen</package>
-      <package>fzf</package>
-      <package>xfce4-session</package>
+      <package>pulseaudio</package>
+      <package>pnmixer-git</package>
+      <package>pinta</package>
+      <package>pinentry-gtk2</package>
       <package>pidgin</package>
-      <package>weechat</package>
-      <package>vlc</package>
-      <package>snapper</package>
       <package>perl-File-MimeInfo</package>
       <package>perl-File-DesktopEntry</package>
-      <package>pulseaudio</package>
-      <package>rpm</package>
-      <package>yank</package>
+      <package>peek</package>
+      <package>pdftk</package>
       <package>pavucontrol</package>
       <package>password-store</package>
       <package>pass-otp</package>
-      <package>xsel</package>
+      <package>p11-kit-nss-trust</package>
       <package>osc</package>
       <package>openvpn</package>
       <package>openresolv</package>
-      <package>xdpyinfo</package>
       <package>openSUSE-release</package>
-      <package>unclutter</package>
-      <package>simple-scan</package>
-      <package>spec-cleaner</package>
-      <package>shim</package>
+      <package>openSUSE-Addon-NonOss-release</package>
+      <package>nvidia-bumblebee-32bit</package>
+      <package>nvidia-bumblebee</package>
+      <package>numactl</package>
       <package>mupdf</package>
       <package>mumble</package>
-      <package>ranger</package>
+      <package>mono-complete</package>
       <package>mokutil</package>
-      <package>python3-docker-compose</package>
+      <package>macchanger</package>
+      <package>lutris</package>
       <package>lightdm</package>
       <package>light-locker</package>
+      <package>libvlccore9</package>
+      <package>libvlc5</package>
       <package>libvidstab1_1</package>
       <package>libreoffice-writer</package>
+      <package>libgnutlsxx28</package>
+      <package>libgnutls-devel-32bit</package>
+      <package>libgnutls-devel</package>
       <package>libgnomesu</package>
       <package>libavformat56</package>
       <package>libavdevice57</package>
       <package>libavdevice56</package>
       <package>libavcodec56</package>
-      <package>bat</package>
       <package>kexec-tools</package>
+      <package>jre1.8</package>
       <package>jq</package>
       <package>irqbalance</package>
+      <package>inwee</package>
       <package>imagewriter</package>
       <package>i3</package>
       <package>hub</package>
-      <package>xournal</package>
       <package>hplip</package>
-      <package>xf86-video-intel</package>
-      <package>x11vnc</package>
       <package>gvim</package>
       <package>gutenprint</package>
+      <package>gstreamer-plugins-bad</package>
       <package>grub2-x86_64-efi</package>
       <package>gnome-calculator</package>
       <package>glibc</package>
+      <package>git-lfs</package>
       <package>git-core</package>
+      <package>fzf</package>
       <package>fwts</package>
       <package>fuse-exfat</package>
-      <package>numactl</package>
-      <package>vlc-codec-gstreamer</package>
       <package>fontawesome-fonts</package>
       <package>flameshot</package>
       <package>firewall-config</package>
       <package>fd</package>
       <package>exfat-utils</package>
+      <package>exa</package>
       <package>emacs-x11</package>
       <package>e2fsprogs</package>
-      <package>python3-py2pack</package>
       <package>dosfstools</package>
-      <package>python2-py2pack</package>
       <package>docker</package>
-      <package>pinentry-gtk2</package>
+      <package>discord</package>
+      <package>dbeaver</package>
       <package>cups-backends</package>
       <package>ctags</package>
-      <package>p11-kit-nss-trust</package>
+      <package>clipmenu</package>
       <package>chrony</package>
       <package>chromium</package>
+      <package>cargo-vendor</package>
       <package>capnet-assist</package>
+      <package>ca-certificates-suse</package>
+      <package>bumblebee</package>
       <package>btrfsprogs</package>
       <package>biosdevname</package>
-      <package>beets</package>
+      <package>bbswitch</package>
+      <package>bat</package>
       <package>autoyast2</package>
-      <package>asciinema</package>
       <package>alsa-firmware</package>
       <package>ShellCheck</package>
       <package>NetworkManager-openvpn</package>
       <package>MozillaThunderbird</package>
       <package>MozillaFirefox</package>
       <package>Mesa-dri-32bit</package>
-      <package>openSUSE-Addon-NonOss-release</package>
+      <package>MellowPlayer</package>
     </packages>
     <patterns config:type="list">
       <pattern>apparmor</pattern>
@@ -147,6 +175,7 @@
       <pattern>minimal_base</pattern>
       <pattern>sw_management</pattern>
       <pattern>x11</pattern>
+      <pattern>x11_enhanced</pattern>
       <pattern>x11_opt</pattern>
       <pattern>x11_yast</pattern>
       <pattern>yast2_basis</pattern>
@@ -158,8 +187,8 @@
       <package>xscreensaver</package>
       <package>xfwm4</package>
       <package>xfdesktop</package>
-      <package>xfce4-panel</package>
       <package>thunar</package>
+      <package>xfce4-panel</package>
       <package>icedtea-web</package>
       <package>ibus</package>
       <package>i3lock</package>
