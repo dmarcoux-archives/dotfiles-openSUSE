@@ -20,8 +20,8 @@ ealias gcoem='git commit --edit --message'
 ealias gcoma='git commit --amend'
 ealias gdi='git diff'
 ealias gdis='git diff --staged'
-ealias gf='git fetch'
-ealias gfu='git fetch upstream'
+ealias gf='git fetch --tags'
+ealias gfu='git fetch --tags upstream'
 # Output: abbreviated_commit_hash (%h) | commit_message (%s) | author_name (%an, in yellow) | commit_date_relative (%cr, in green)
 ealias glo='git log --pretty=format:"%h %C(bold)|%C(reset) %s %C(bold)|%C(reset) %C(yellow)%an%C(reset) %C(bold)|%C(reset) %C(green)%cr%C(reset)" --max-count=100'
 # Copy a string from the output of the glo alias (a commit hash for example)
@@ -156,7 +156,7 @@ if type hub > /dev/null 2>&1; then
     fi
 
     # Fetch branches of the fork
-    git fetch "$USER"
+    git fetch --tags "$USER"
 
     # Checkout the fork's branch
     git checkout "$USER"/"$BRANCH"
