@@ -1,0 +1,8 @@
+[X11_Bumblebee]
+name=Bumblebee project (openSUSE_Tumbleweed)
+enabled=1
+autorefresh=0
+baseurl=http://download.opensuse.org/repositories/X11:/Bumblebee/openSUSE_Tumbleweed/
+type=rpm-md
+gpgcheck=1
+gpgkey=http://download.opensuse.org/repositories/X11:/Bumblebee/openSUSE_Tumbleweed/repodata/repomd.xml.key
