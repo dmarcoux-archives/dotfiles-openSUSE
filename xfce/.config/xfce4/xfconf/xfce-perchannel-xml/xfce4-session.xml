@@ -42,7 +42,7 @@
     <property name="LaunchGNOME" type="bool" value="false"/>
   </property>
   <property name="shutdown" type="empty">
-    <property name="LockScreen" type="bool" value="true"/>
+    <property name="LockScreen" type="bool" value="false"/>
   </property>
   <property name="startup" type="empty">
     <property name="ssh-agent" type="empty">
