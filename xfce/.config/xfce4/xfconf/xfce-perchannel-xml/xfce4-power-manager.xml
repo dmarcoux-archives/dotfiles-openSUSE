@@ -16,11 +16,11 @@
     <property name="general-notification" type="empty"/>
     <property name="hibernate-button-action" type="empty"/>
     <property name="inactivity-on-ac" type="empty"/>
-    <property name="inactivity-on-battery" type="empty"/>
+    <property name="inactivity-on-battery" type="uint" value="14"/>
     <property name="inactivity-sleep-mode" type="empty"/>
     <property name="lid-action-on-ac" type="empty"/>
     <property name="lid-action-on-battery" type="empty"/>
-    <property name="lock-screen-suspend-hibernate" type="empty"/>
+    <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
     <property name="network-manager-sleep" type="empty"/>
     <property name="power-button-action" type="empty"/>
     <property name="show-panel-label" type="int" value="3"/>
@@ -28,12 +28,14 @@
     <property name="spin-down-hdd" type="empty"/>
     <property name="spin-down-on-ac-timeout" type="empty"/>
     <property name="spin-down-on-battery-timeout" type="empty"/>
-    <property name="brightness-switch-restore-on-exit" type="int" value="0"/>
+    <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
     <property name="brightness-switch" type="int" value="0"/>
     <property name="show-tray-icon" type="bool" value="true"/>
     <property name="presentation-mode" type="bool" value="false"/>
     <property name="handle-brightness-keys" type="bool" value="true"/>
     <property name="blank-on-battery" type="int" value="0"/>
     <property name="blank-on-ac" type="int" value="0"/>
+    <property name="inactivity-sleep-mode-on-battery" type="uint" value="1"/>
+    <property name="logind-handle-lid-switch" type="bool" value="false"/>
   </property>
 </channel>
