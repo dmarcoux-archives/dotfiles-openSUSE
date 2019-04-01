@@ -1,7 +1,7 @@
 # If osc is installed, set it up
 if type osc > /dev/null 2>&1; then
   # Development OBS instance
-  # This depends on having a 'dosc' alias in osc's config (~/config/osc/oscrc)
+  # This depends on having a 'dosc' alias in osc's config (~/.config/osc/oscrc)
   # [http://localhost:3000]
   # aliases = dosc
   # user = Admin
