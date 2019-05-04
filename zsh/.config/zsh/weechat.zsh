@@ -19,7 +19,6 @@ if type weechat > /dev/null 2>&1; then
       fi
 
       # Settings which need to be expanded before being passed to inwee
-      echo "/secure set freenode_password "$(pass pass/me/freenode.net=dmarcoux)"" | inwee
       echo "/secure set znc_password "$(pass pass/me/znc=dmarcoux)"" | inwee
 
       # All settings without expansion are in settings.inwee

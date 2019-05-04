@@ -41,11 +41,16 @@
 /set irc.server_default.ssl_verify off
 /set irc.server_default.capabilities "account-notify,away-notify,cap-notify,multi-prefix,server-time,znc.in/self-message"
 
-# Freenode
-/server add freenode znc.dmarcoux.de/6697 -ssl -autoconnect
-/set irc.server.freenode.password dmarcoux/freenode:${sec.data.znc_password}
+# Setup Freenode ZNC connection
+/server add freenode znc.dmarcoux.de/6697 -ssl -username=dmarcoux/freenode -password=${sec.data.znc_password} -autoconnect
 
 /connect -all
+
+# TODO: This doesn't work, so do it in the web UI
+# # Add Freenode network
+# /msg *status AddNetwork freenode
+# /msg *status JumpNetwork freenode
+# /msg *status AddServer chat.freenode.net 6697
 
 ##### Key Bindings
 
