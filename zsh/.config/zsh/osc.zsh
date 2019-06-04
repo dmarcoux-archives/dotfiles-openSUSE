@@ -42,6 +42,9 @@ if type osc > /dev/null 2>&1; then
   # Create a new package
   ealias omp='osc mkpac'
 
+  # Rebuld all packages for a project
+  ealias ora='osc rebuild --all' # then add project name...
+
   # Mark file(s) to be deleted upon next commit
   ealias orm='osc delete'
 
