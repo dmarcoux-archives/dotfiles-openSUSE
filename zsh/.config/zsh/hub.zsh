@@ -55,10 +55,13 @@ if type hub > /dev/null 2>&1; then
     (
       cd "$REPOSITORY_NAME" || exit
 
-      git remote set-url upstream "$REPOSITORY_URL"
+      git remote add upstream "$REPOSITORY_URL"
+      git fetch --tags upstream
       git remote set-head upstream master
 
       git remote set-url origin # replace whatever is between : and / in $REPOSITORY_URL by $GITHUB_USER
+      git fetch --tags origin
+      git remote set-head origin master
     )
   }
 
