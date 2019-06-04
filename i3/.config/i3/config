@@ -76,7 +76,7 @@ bar {
 
     # The first available output will be used. It will be the primary output, otherwise the laptop's output.
     tray_output primary
-    tray_output eDP1
+    tray_output eDP-1-1
 
     # Disable switching workspace by scrolling the mouse wheel up/down
     bindsym button4 nop
