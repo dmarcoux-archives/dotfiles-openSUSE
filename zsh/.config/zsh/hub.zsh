@@ -83,31 +83,4 @@ if type hub > /dev/null 2>&1; then
 
     git submodule update
   }
-
-  # Checkout branch of someone else's fork
-  checkout_fork() {
-    if [ -z "$1" ]; then
-      # Display usage
-      echo "Usage: ${funcstack[1]} username:branch"
-      return
-    fi
-
-    USER="$(echo "$1" | cut --delimiter=':' --fields=1)"
-    BRANCH="$(echo "$1" | cut --delimiter=':' --fields=2)"
-    REMOTE="$(git config remote.origin.url | sed -e "s|:.*/|:$USER/|g")"
-
-    # Add a remote for the fork (if one with the same name doesn't already exist)
-    if ! git remote get-url "$USER" > /dev/null 2>&1; then
-      git remote add "$USER" "$REMOTE"
-    fi
-
-    # Fetch branches of the fork
-    git fetch --tags "$USER"
-
-    # Checkout the fork's branch
-    git checkout "$USER"/"$BRANCH"
-
-    # Create a local copy of the fork's branch
-    git checkout -b "$BRANCH"
-  }
 fi
