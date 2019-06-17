@@ -1,9 +1,11 @@
 # If hub is installed, set it up
 if type hub > /dev/null 2>&1; then
-  # Create a new GitHub repository
   #   Pass GITHUB_TOKEN with personal access token to avoid storing GitHub credentials ('man hub' for details)
   #   Generate a personal access token at https://github.com/settings/tokens/new
-  alias hubc='GITHUB_TOKEN="$(pass pass/me/hub-cli-github-access-token)" hub create'
+  alias hub='GITHUB_TOKEN="$(pass pass/me/hub-cli-github-access-token)" hub'
+
+  # Create a new GitHub repository
+  alias hubc='hub create'
 
   GITHUB_USER="dmarcoux"
 
