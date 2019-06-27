@@ -123,8 +123,8 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 export GPG_TTY=$(tty)
 
 # Add dotfiles' scripts to the PATH
-# Add binaries installed for user to the PATH (pip, stack, etc...)
-export PATH=$PATH:~/dotfiles/scripts:~/.local/bin
+# Add binaries installed for user to the PATH (pip, stack, cargo, etc...)
+export PATH=$PATH:~/dotfiles/scripts:~/.local/bin:~/.cargo/bin
 
 # If fzf is installed
 if type fzf > /dev/null; then
