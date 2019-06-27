@@ -31,3 +31,6 @@ HotkeyVolumeStep=1
 
 [(default)]
 Channel=Master
+
+[HDA Intel PCH]
+Channel=Master
