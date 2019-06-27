@@ -197,6 +197,11 @@ if type weechat > /dev/null; then
   export WEECHAT_HOME="$XDG_CONFIG_HOME/weechat"
 fi
 
+# If ripgrep is installed
+if type rg > /dev/null; then
+  export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/config"
+fi
+
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 
