@@ -32,7 +32,6 @@
       <package>wpa_supplicant</package>
       <package>wine-staging</package>
       <package>whois</package>
-      <package>weechat</package>
       <package>vlc-qt</package>
       <package>vlc-noX</package>
       <package>vlc-codec-gstreamer</package>
@@ -113,7 +112,6 @@
       <package>jre1.8</package>
       <package>jq</package>
       <package>irqbalance</package>
-      <package>inwee</package>
       <package>imagewriter</package>
       <package>i3</package>
       <package>hub</package>

@@ -191,12 +191,6 @@ if type pass > /dev/null; then
   export PASSWORD_STORE_GENERATED_LENGTH=30
 fi
 
-# If weechat is installed
-if type weechat > /dev/null; then
-  # Do not pollute the home directory
-  export WEECHAT_HOME="$XDG_CONFIG_HOME/weechat"
-fi
-
 # If ripgrep is installed
 if type rg > /dev/null; then
   export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/config"

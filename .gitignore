@@ -21,9 +21,6 @@ ranger/.config/ranger/tagged
 vim/.vim/.netrwhist
 vim/.vim/plugged/
 
-weechat/.config/weechat/
-!weechat/.config/weechat/settings.inwee
-
 xfce/.config/xfce4/xfce4-screenshooter
 xfce/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
 xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml

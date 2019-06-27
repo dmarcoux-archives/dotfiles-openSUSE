@@ -8,10 +8,6 @@ set -eux
 
 BACKUP_DIR="$HOME/dotfiles/backup/$HOSTNAME/keys"
 
-echo 'Setup weechat'
-# TODO: This is bad... the function is defined in my zsh files... Maybe transfer it in a bash script under scripts
-echo 'Run configure_weechat() from a shell'
-
 echo 'Setup npm'
 # TODO: Package n instead of executing this script directly
 curl -L https://git.io/n-install | bash

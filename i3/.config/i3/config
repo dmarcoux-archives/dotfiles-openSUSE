@@ -117,7 +117,6 @@ assign [class="^Lutris$"] → $WS1
 
 assign [class="^Firefox$"] → $WS2
 
-assign [title="^Weechat$"] → $WS3
 assign [class="^Pidgin$"] → $WS3
 assign [class="^Mumble$"] → $WS3
 assign [class="^discord$"] → $WS3
@@ -148,9 +147,6 @@ exec xfce4-terminal --hide-menubar --title=Terminal
 
 # Launch web browser
 exec $BROWSER
-
-# Launch IRC client
-exec xfce4-terminal --command='zsh -ic "weechat"' --title=Weechat --hide-menubar
 
 # Launch email client
 exec thunderbird
