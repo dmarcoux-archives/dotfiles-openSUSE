@@ -29,7 +29,7 @@ esac
 # Load .Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-# Set environment variables (so they are available in i3)
+# Set environment variables
 
 #----- Editor & Browser
 export EDITOR=emacs
