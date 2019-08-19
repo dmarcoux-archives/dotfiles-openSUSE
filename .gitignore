@@ -1,15 +1,11 @@
 backup/
 
-beets/.config/beets/library.db
-beets/.config/beets/state.pickle
-
 etc/etc/openvpn/
 !etc/etc/openvpn/client/
 
 etc/etc/zypp/repos.d/*.repo
 !etc/etc/zypp/repos.d/home:dmarcoux.repo
 !etc/etc/zypp/repos.d/packman.inode.at-openSUSE_Tumbleweed.repo
-!etc/etc/zypp/repos.d/X11_Bumblebee.repo
 
 gpg/.gnupg/
 !gpg/.gnupg/gpg-agent.conf
@@ -20,7 +16,3 @@ ranger/.config/ranger/tagged
 
 vim/.vim/.netrwhist
 vim/.vim/plugged/
-
-xfce/.config/xfce4/xfce4-screenshooter
-xfce/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
-xfce/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
