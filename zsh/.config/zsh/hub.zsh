@@ -43,25 +43,27 @@ if type hub > /dev/null 2>&1; then
   setup_existing_fork() {
     if [ -z "$1" ]; then
       # Display usage
-      echo "Usage: ${funcstack[1]} git@github.com:username/repo.git"
+      echo "Usage: ${funcstack[1]} git@github.com:username/upsteam_repo.git"
       return
     fi
 
-    REPOSITORY_URL="$1"
+    UPSTREAM="$1"
+    # replace whatever is between : and / in $UPSTREAM by $GITHUB_USER
+    FORK="$(sed "s|:.*/|:$GITHUB_USER/|g" <<<"$UPSTREAM")"
     REPOSITORY_NAME="$(basename "$1" .git)"
 
     # Clone repository
-    git clone "$REPOSITORY_URL"
+    git clone "$UPSTREAM"
 
     # Go into cloned repository and set the remotes and HEADs
     (
       cd "$REPOSITORY_NAME" || exit
 
-      git remote add upstream "$REPOSITORY_URL"
+      git remote add upstream "$UPSTREAM"
       git fetch --tags upstream
       git remote set-head upstream master
 
-      git remote set-url origin # replace whatever is between : and / in $REPOSITORY_URL by $GITHUB_USER
+      git remote set-url origin "$FORK"
       git fetch --tags origin
       git remote set-head origin master
     )
