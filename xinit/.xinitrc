@@ -68,9 +68,6 @@ export LESS_TERMCAP_so=$'\E[38;33;246m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 
-# Set GPG TTY - source: https://wiki.archlinux.org/index.php/GnuPG#Configure_pinentry_to_use_the_correct_TTY
-export GPG_TTY=$(tty)
-
 # Add dotfiles' scripts to the PATH
 # Add binaries installed for user to the PATH (pip, stack, cargo, etc...)
 export PATH=$PATH:~/dotfiles/scripts:~/.local/bin:~/.cargo/bin
