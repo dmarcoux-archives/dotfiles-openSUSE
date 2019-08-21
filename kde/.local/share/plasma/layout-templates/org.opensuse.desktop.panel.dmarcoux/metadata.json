@@ -2,21 +2,16 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "opensuse-kde@opensuse.org",
-                "Name": "openSUSE KDE Team"
-            },
-            {
-                "Email": "aseigo@kde.org",
-                "Name": "Aaron Seigo"
+                "Name": "Dany Marcoux"
             }
         ],
         "Category": "",
         "Dependencies": [
         ],
         "EnabledByDefault": true,
-        "Id": "org.opensuse.desktop.defaultPanel",
+        "Id": "org.opensuse.desktop.panel.dmarcoux",
         "License": "GPL",
-        "Name": "Default openSUSE Panel",
+        "Name": "Panel by dmarcoux",
         "ServiceTypes": [
             "Plasma/LayoutTemplate"
         ],
