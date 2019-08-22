@@ -6,6 +6,12 @@ solvable_name: Mesa-dri-nouveau
 
 
 type: package
+match_type: glob
+case_sensitive: on
+solvable_name: btrfsprogs
+
+
+type: package
 match_type: exact
 case_sensitive: on
 solvable_name: highlight
@@ -15,4 +21,10 @@ type: package
 match_type: glob
 case_sensitive: on
 solvable_name: ibus
+
+
+type: package
+match_type: glob
+case_sensitive: on
+solvable_name: snapper
 
