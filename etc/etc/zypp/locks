@@ -28,3 +28,9 @@ match_type: glob
 case_sensitive: on
 solvable_name: snapper
 
+
+type: package
+match_type: glob
+case_sensitive: on
+solvable_name: w3m
+
