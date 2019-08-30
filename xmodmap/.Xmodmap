@@ -12,7 +12,7 @@ add lock = Caps_Lock
 ! AltGr + 4 produces €
 keycode 13 = 4 dollar 4 dollar EuroSign EuroSign
 
-! AltGr + s produces ß (Doesn't work somehow...)
+! AltGr + s produces ß
 keycode 39 = s S s S ssharp ssharp
 
 ! AltGr + Space produces a normal space, instead of a non-breakable space (often resulting in "command not found" errors when piping commands)
