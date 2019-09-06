@@ -6,6 +6,7 @@ etc/etc/openvpn/
 etc/etc/zypp/repos.d/*.repo
 !etc/etc/zypp/repos.d/home:dmarcoux.repo
 !etc/etc/zypp/repos.d/packman.inode.at-openSUSE_Tumbleweed.repo
+!etc/etc/zypp/repos.d/packages.microsoft.com-yumrepos-vscode.repo
 
 gpg/.gnupg/
 !gpg/.gnupg/gpg-agent.conf
