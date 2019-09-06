@@ -9,5 +9,6 @@
     "extensions.autoCheckUpdates": false,
     "npm.fetchOnlinePackageInfo": false,
     "workbench.colorTheme": "Solarized Light",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "editor.tabCompletion": "on"
 }
