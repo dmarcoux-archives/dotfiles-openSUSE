@@ -1,5 +1,11 @@
 {
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "update.mode": "none"
+    "update.mode": "none",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.showReleaseNotes": false,
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "npm.fetchOnlinePackageInfo": false
 }
