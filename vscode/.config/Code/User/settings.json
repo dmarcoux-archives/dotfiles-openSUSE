@@ -10,5 +10,6 @@
     "npm.fetchOnlinePackageInfo": false,
     "workbench.colorTheme": "Solarized Light",
     "workbench.startupEditor": "none",
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2
 }
