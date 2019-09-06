@@ -8,5 +8,6 @@
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": false,
     "npm.fetchOnlinePackageInfo": false,
-    "workbench.colorTheme": "Solarized Light"
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.startupEditor": "newUntitledFile"
 }
