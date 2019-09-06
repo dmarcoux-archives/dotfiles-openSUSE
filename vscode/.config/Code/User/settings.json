@@ -11,5 +11,6 @@
     "workbench.colorTheme": "Solarized Light",
     "workbench.startupEditor": "none",
     "editor.tabCompletion": "on",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "vim.useSystemClipboard": true
 }
