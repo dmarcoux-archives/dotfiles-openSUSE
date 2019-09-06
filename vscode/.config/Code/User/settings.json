@@ -7,5 +7,6 @@
     "update.showReleaseNotes": false,
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": false,
-    "npm.fetchOnlinePackageInfo": false
+    "npm.fetchOnlinePackageInfo": false,
+    "workbench.colorTheme": "Solarized Light"
 }
