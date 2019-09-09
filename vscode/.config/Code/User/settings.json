@@ -12,5 +12,7 @@
     "workbench.startupEditor": "none",
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
