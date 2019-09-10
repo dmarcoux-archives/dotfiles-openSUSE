@@ -52,5 +52,6 @@
         "yaml",
         "yml",
         "ruby"
-    ]
+    ],
+    "editor.renderWhitespace": "all"
 }
