@@ -11,7 +11,7 @@
     "when": "suggestWidgetVisible"
   },
   {
-    "key": "ctrl+[Backquote]",
+    "key": "ctrl+[Backslash]",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
