@@ -3,7 +3,7 @@
 [commit]
   gpgSign = true
 [core]
-  editor = code
+  editor = code --wait
   excludesFile = ~/.config/git/.gitignore_global
   fileMode = true
 [diff]
