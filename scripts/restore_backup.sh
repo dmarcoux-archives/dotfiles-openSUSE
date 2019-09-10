@@ -12,20 +12,6 @@ echo 'Setup npm'
 # TODO: Package n instead of executing this script directly
 curl -L https://git.io/n-install | bash
 
-if type emacs > /dev/null 2>&1; then
-  # Setup spacemacs if not already done (so it doesn't contain the .git directory)
-  # - Remove emacs files
-  # - Install spacemacs
-  # - Install spacemacs' layers (only needed the first time)
-  if [ ! -d ~/.emacs.d/.git ]; then
-    echo 'Setup spacemacs'
-    rm -rf ~/.emacs.d
-    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-    stow spacemacs
-    command emacs
-  fi
-fi
-
 if type vim > /dev/null 2>&1; then
   echo "Install vim's plugin"
   # Only if needed (so it doesn't contain the plugged directory, which means it was already done)

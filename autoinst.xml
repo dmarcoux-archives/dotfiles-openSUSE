@@ -64,7 +64,6 @@
       <package>firewalld</package>
       <package>fd</package>
       <package>exa</package>
-      <package>emacs-x11</package>
       <package>e2fsprogs</package>
       <package>dosfstools</package>
       <package>docker</package>

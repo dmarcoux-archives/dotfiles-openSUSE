@@ -32,8 +32,8 @@ esac
 # Set environment variables
 
 #----- Editor & Browser
-export EDITOR=emacs
-export VISUAL=emacs
+export EDITOR=code
+export VISUAL=code
 export BROWSER=firefox
 
 #----- Locale

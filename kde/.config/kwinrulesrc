@@ -29,16 +29,6 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [4]
-Description=Application settings for emacs
-clientmachine=localhost
-clientmachinematch=0
-desktop=1
-desktoprule=4
-wmclass=emacs
-wmclasscomplete=false
-wmclassmatch=1
-
-[5]
 Description=Application settings for thunderbird
 clientmachine=localhost
 clientmachinematch=0
@@ -48,7 +38,7 @@ wmclass=mail thunderbird
 wmclasscomplete=true
 wmclassmatch=1
 
-[6]
+[5]
 Description=Application settings for firefox
 clientmachine=localhost
 clientmachinematch=0
@@ -58,7 +48,7 @@ wmclass=navigator firefox
 wmclasscomplete=true
 wmclassmatch=1
 
-[7]
+[6]
 Description=Application settings for konsole
 clientmachine=localhost
 clientmachinematch=0
@@ -69,4 +59,4 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [General]
-count=7
+count=6
