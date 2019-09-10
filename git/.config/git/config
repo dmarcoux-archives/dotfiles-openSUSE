@@ -3,7 +3,7 @@
 [commit]
   gpgSign = true
 [core]
-  editor = vim
+  editor = code
   excludesFile = ~/.config/git/.gitignore_global
   fileMode = true
 [diff]
