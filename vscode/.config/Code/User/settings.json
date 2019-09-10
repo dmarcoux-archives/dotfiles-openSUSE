@@ -15,5 +15,6 @@
     "vim.useSystemClipboard": true,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "search.smartCase": true
+    "search.smartCase": true,
+    "workbench.activityBar.visible": false
 }
