@@ -53,5 +53,6 @@
         "yml",
         "ruby"
     ],
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "vim.hlsearch": true
 }
