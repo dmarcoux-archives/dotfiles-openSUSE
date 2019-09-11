@@ -58,5 +58,40 @@ wmclass=konsole
 wmclasscomplete=false
 wmclassmatch=1
 
+[Directories]
+dir_pixmap[$d]
+
 [General]
+BrowserApplication[$d]
 count=6
+desktopFont[$d]
+fixed[$d]
+font[$d]
+menuFont[$d]
+shadeSortColumn[$d]
+smallestReadableFont[$d]
+taskbarFont[$d]
+toolBarFont[$d]
+
+[Icons]
+Theme[$d]
+
+[KDE]
+ChangeCursor[$d]
+LookAndFeelPackage[$d]
+contrast[$d]
+
+[KDE URL Restrictions]
+rule_1[$d]
+rule_count[$d]
+
+[KFileDialog Settings]
+Breadcrumb Navigation[$d]
+
+[Paths]
+Trash[$d]
+
+[PreviewSettings]
+camera[$d]
+file[$d]
+fonts[$d]
