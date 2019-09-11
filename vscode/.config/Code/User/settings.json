@@ -54,5 +54,6 @@
         "ruby"
     ],
     "editor.renderWhitespace": "all",
-    "vim.hlsearch": true
+    "vim.hlsearch": true,
+    "workbench.iconTheme": "vscode-icons"
 }
