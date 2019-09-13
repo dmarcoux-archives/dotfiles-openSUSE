@@ -55,5 +55,6 @@
     ],
     "editor.renderWhitespace": "all",
     "vim.hlsearch": true,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "vim.useCtrlKeys": false
 }
