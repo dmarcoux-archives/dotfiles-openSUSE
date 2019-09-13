@@ -56,5 +56,6 @@
     "editor.renderWhitespace": "all",
     "vim.hlsearch": true,
     "workbench.iconTheme": "vscode-icons",
-    "vim.useCtrlKeys": false
+    "vim.useCtrlKeys": false,
+    "extensions.ignoreRecommendations": true
 }
