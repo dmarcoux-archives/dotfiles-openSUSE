@@ -56,6 +56,16 @@
     "editor.renderWhitespace": "all",
     "vim.hlsearch": true,
     "workbench.iconTheme": "vscode-icons",
-    "vim.useCtrlKeys": false,
-    "extensions.ignoreRecommendations": true
+    "vim.useCtrlKeys": true,
+    "extensions.ignoreRecommendations": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["redo"]
+        }
+    ]
 }
