@@ -67,5 +67,7 @@
             "before": ["<C-r>"],
             "commands": ["redo"]
         }
-    ]
+    ],
+    "search.quickOpen.includeHistory": false,
+    "workbench.commandPalette.history": 0
 }
