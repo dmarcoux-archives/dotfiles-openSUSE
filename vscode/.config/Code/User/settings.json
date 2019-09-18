@@ -69,5 +69,6 @@
         }
     ],
     "search.quickOpen.includeHistory": false,
-    "workbench.commandPalette.history": 0
+    "workbench.commandPalette.history": 0,
+    "git.enabled": false
 }
