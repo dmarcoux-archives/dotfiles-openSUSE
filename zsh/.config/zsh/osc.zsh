@@ -65,5 +65,5 @@ if type osc > /dev/null 2>&1; then
   ealias oup='osc update'
 
   # Edit the changes file
-  ealias ovc='osc vc'
+  ealias ovc='EDITOR="code --wait" osc vc'
 fi
