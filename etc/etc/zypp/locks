@@ -26,6 +26,12 @@ solvable_name: ibus
 type: package
 match_type: glob
 case_sensitive: on
+solvable_name: kmail
+
+
+type: package
+match_type: glob
+case_sensitive: on
 solvable_name: knotes
 
 
