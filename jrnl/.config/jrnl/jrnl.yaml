@@ -1,0 +1,13 @@
+default_hour: 9
+default_minute: 0
+editor: code --wait
+encrypt: false
+highlight: true
+indent_character: '|'
+journals:
+  default: ~/journals/default.txt
+linewrap: 79
+tagsymbols: '@'
+template: false
+timeformat: '%a %d, %B %Y %T'
+version: 2.0.0
