@@ -29,10 +29,10 @@ rofi.kb-row-tab:
 rofi.kb-accept-entry: Return,Tab
 
 ! Go to previous entry
-rofi.kb-row-up: Control+k
+rofi.kb-row-up: Control+k,Up
 
 ! Go to next entry
-rofi.kb-row-down: Control+j
+rofi.kb-row-down: Control+j,Down
 
 ! Quit rofi
 rofi.kb-cancel: Escape
