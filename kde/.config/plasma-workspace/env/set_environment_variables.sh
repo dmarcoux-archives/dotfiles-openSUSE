@@ -1,35 +1,4 @@
-#!/usr/bin/env bash
-# Everything in this file is from the sample .xinitrc for openSUSE, unless stated otherwise
-# This script is called from 'startx' when you start an X session
-
-# In case everything goes wrong, we at least fall back to a plain xterm
-failsafe="xterm -ls -T Failsafe -geometry 80x24-0-0"
-trap "exec $failsafe" EXIT SIGHUP SIGINT SIGPIPE SIGTERM SIGIO
-
-# Some bash (1 and 2) settings to avoid trouble on a failed program call.
-set +e > /dev/null 2>&1
-set +u > /dev/null 2>&1
-set +o posix  > /dev/null 2>&1
-if type shopt > /dev/null 2>&1 ; then
-    shopt -s execfail
-else
-    no_exit_on_failed_exec=1
-fi
-
-# Source common code shared between the X session and X init scripts
-. /etc/X11/xinit/xinitrc.common
-
-# Special for twm
-case "$WINDOWMANAGER" in
-    *twm) xsetroot -solid darkslateblue
-esac
-
-#----- Custom lines
-
-# Load .Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-
-# Set environment variables
+#!/bin/sh
 
 #----- Editor & Browser
 export EDITOR=code
@@ -144,11 +113,3 @@ fi
 
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
-
-# Start KDE session
-exec startkde
-
-#----- End of custom lines
-
-# Call failsafe
-exit 0
