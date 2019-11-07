@@ -21,7 +21,7 @@
 [status]
   showUntrackedFiles = all
 [user]
-  email = danymarcoux@gmail.com
+  email = dmarcoux@posteo.de
   name = Dany Marcoux
   signingKey = 82FA5A4A
 [filter "lfs"]
