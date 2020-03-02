@@ -111,5 +111,10 @@ if type rg > /dev/null; then
   export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/config"
 fi
 
+# If ranger is installed
+if type ranger > /dev/null; then
+  export BAT_THEME=ansi-light
+fi
+
 # Since Qt 5.6, Qt 5 applications can be instructed to honor screen DPI by setting the following ENV variable
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
